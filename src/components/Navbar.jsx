@@ -35,13 +35,6 @@ const Navbar = () => {
           }}>
             {isCollege ? 'College' : 'Mahavidyalaya'}
           </span>
-          <span className="nav-logo-text-mobile">GSI</span>
-          <span key={isCollege ? 'c' : 'm'} className="logo-swap nav-logo-text-mobile" style={{
-            minWidth: '20px',
-            animation: 'fadeIn 0.5s ease-in-out'
-          }}>
-            {isCollege ? 'C' : 'M'}
-          </span>
         </Link>
         <div className={`navbar-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>

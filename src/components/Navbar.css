@@ -31,10 +31,6 @@
   letter-spacing: -0.5px;
 }
 
-.nav-logo-text-mobile {
-  display: none;
-}
-
 .navbar-links {
   display: flex;
   gap: 40px;
@@ -150,10 +146,16 @@
     margin-top: 16px;
   }
 
-  .nav-logo-text-full, .nav-logo-text-short {
-    display: none !important;
+  .navbar-logo {
+    font-size: 13px !important;
+    gap: 4px !important;
   }
-  .nav-logo-text-mobile {
-    display: inline-block !important;
+  
+  .navbar-logo img {
+    height: 28px !important;
+  }
+  
+  .logo-swap {
+    min-width: 95px !important;
   }
 }
