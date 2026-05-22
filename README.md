@@ -1,5 +1,7 @@
 # Geeta Science Inter College
 
+**[🌐 Live Demo: https://geetascienceintercollege.netlify.app/](https://geetascienceintercollege.netlify.app/)**
+
 A modern, high-performance web application designed for Geeta Science Inter College. This platform serves as the central hub for admissions, academic information, notices, and showcasing the institution's achievements.
 
 ## Features
