@@ -11,6 +11,7 @@ const AdminDashboard = () => {
   const [editingItem, setEditingItem] = useState(null);
   const { content, updateContent } = useContext(SiteContentContext);
   const [editingSection, setEditingSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Toppers State
   const [isAddingTopper, setIsAddingTopper] = useState(false);
@@ -429,7 +430,7 @@ const AdminDashboard = () => {
   return (
     <div className="admin-layout">
       <aside className="admin-sidebar">
-        <div className="admin-sidebar-header">
+        <div className="admin-sidebar-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <div style={{ width: '40px', height: '40px', borderRadius: '8px', backgroundColor: 'var(--color-navy)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 'bold' }}>
               GS
@@ -439,31 +440,34 @@ const AdminDashboard = () => {
               <p style={{ margin: 0, fontSize: '12px', color: 'var(--color-text-muted)' }}>Admin Portal</p>
             </div>
           </div>
+          <button className="mobile-menu-toggle" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '8px', color: 'var(--color-navy)' }}>
+            <span className="material-symbols-outlined">{isMobileMenuOpen ? 'close' : 'menu'}</span>
+          </button>
         </div>
         
-        <nav className="admin-sidebar-nav">
-          <button className={`admin-nav-item ${activeTab === 'dashboard' ? 'active' : ''}`} onClick={() => setActiveTab('dashboard')}>
+        <nav className={`admin-sidebar-nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+          <button className={`admin-nav-item ${activeTab === 'dashboard' ? 'active' : ''}`} onClick={() => { setActiveTab('dashboard'); setIsMobileMenuOpen(false); }}>
             <span className="material-symbols-outlined">dashboard</span>
             Dashboard
           </button>
-          <button className={`admin-nav-item ${activeTab === 'notices' ? 'active' : ''}`} onClick={() => setActiveTab('notices')}>
+          <button className={`admin-nav-item ${activeTab === 'notices' ? 'active' : ''}`} onClick={() => { setActiveTab('notices'); setIsMobileMenuOpen(false); }}>
             <span className="material-symbols-outlined">campaign</span>
             Notices & Updates
           </button>
-          <button className={`admin-nav-item ${activeTab === 'pages' ? 'active' : ''}`} onClick={() => setActiveTab('pages')}>
+          <button className={`admin-nav-item ${activeTab === 'pages' ? 'active' : ''}`} onClick={() => { setActiveTab('pages'); setIsMobileMenuOpen(false); }}>
             <span className="material-symbols-outlined">edit_document</span>
             Pages Content
           </button>
-          <button className={`admin-nav-item ${activeTab === 'applications' ? 'active' : ''}`} onClick={() => setActiveTab('applications')}>
+          <button className={`admin-nav-item ${activeTab === 'applications' ? 'active' : ''}`} onClick={() => { setActiveTab('applications'); setIsMobileMenuOpen(false); }}>
             <span className="material-symbols-outlined">school</span>
             Applications
           </button>
-          <button className={`admin-nav-item ${activeTab === 'gallery' ? 'active' : ''}`} onClick={() => setActiveTab('gallery')}>
+          <button className={`admin-nav-item ${activeTab === 'gallery' ? 'active' : ''}`} onClick={() => { setActiveTab('gallery'); setIsMobileMenuOpen(false); }}>
             <span className="material-symbols-outlined">photo_library</span>
             Toppers Gallery
           </button>
           <div style={{ height: '1px', backgroundColor: 'var(--color-border)', margin: '16px 0' }}></div>
-          <button className="admin-nav-item" onClick={() => setActiveTab('settings')}>
+          <button className="admin-nav-item" onClick={() => { setActiveTab('settings'); setIsMobileMenuOpen(false); }}>
             <span className="material-symbols-outlined">settings</span>
             Settings
           </button>
