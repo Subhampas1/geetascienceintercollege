@@ -474,7 +474,7 @@ section {
   .hero-actions button { width: 100%; }
   .hero-image-col { padding: 0 24px; }
   
-  .notice-container { flex-direction: column; height: auto; padding: 16px 0; gap: 16px; }
+  .notice-container { flex-direction: column; height: auto; padding: 24px 0; gap: 32px; }
   .notice-header { padding: 0 16px; width: 100%; justify-content: center; }
   .notice-header h2 { display: block; }
   .notice-scroll-wrapper { width: 100%; height: 50px; }
