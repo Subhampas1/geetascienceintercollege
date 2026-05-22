@@ -36,6 +36,9 @@ const Home = () => {
             <p className="hero-subtitle">
               {homeData.heroSubtitle}
             </p>
+            <div className="hero-image-col mobile-hero-image">
+              <img src="/hero-image.png" alt="Happy student representing various academic streams" className="hero-main-img" />
+            </div>
             <div className="hero-actions">
               <Link to="/admissions" style={{ textDecoration: 'none' }}>
                 <Button variant="primary" size="large">Start Your Application</Button>
@@ -45,7 +48,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="hero-image-col">
+          <div className="hero-image-col desktop-hero-image">
             <img src="/hero-image.png" alt="Happy student representing various academic streams" className="hero-main-img" />
           </div>
         </div>

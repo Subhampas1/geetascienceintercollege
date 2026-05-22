@@ -34,6 +34,10 @@ section {
   position: relative;
 }
 
+.mobile-hero-image {
+  display: none;
+}
+
 .hero-main-img {
   max-width: 100%;
   height: auto;
@@ -455,6 +459,8 @@ section {
   .hero-content { flex-direction: column; text-align: center; gap: 48px; }
   .hero-text-col { text-align: center; }
   .hero-actions { justify-content: center; }
+  .desktop-hero-image { display: none; }
+  .mobile-hero-image { display: flex; margin: 48px 0; }
   .toppers-grid, .streams-grid, .advantage-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
   .director-container { gap: 40px; }
 }
