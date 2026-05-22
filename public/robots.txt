@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
-Sitemap: https://geetascienceintercollege.edu.in/sitemap.xml
+Sitemap: https://geetascienceintercollege.netlify.app/sitemap.xml
