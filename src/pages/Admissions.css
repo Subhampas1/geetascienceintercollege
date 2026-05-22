@@ -8,6 +8,21 @@
   padding: 140px 0 80px;
 }
 
+.admissions-hero-title {
+  font-size: 56px;
+  margin-bottom: 24px;
+}
+
+.admissions-hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.admissions-hero-btn {
+  width: 250px;
+}
+
 
 
 /* Application Form */
@@ -233,5 +248,19 @@
   }
   .contact-methods {
     align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .admissions-hero-title {
+    font-size: 36px !important;
+  }
+  .admissions-hero-actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .admissions-hero-btn {
+    width: 100% !important;
   }
 }

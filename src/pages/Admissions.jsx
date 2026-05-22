@@ -12,18 +12,18 @@ const Admissions = () => {
       {/* Hero Section */}
       <section className="admissions-hero text-center">
         <div className="container">
-          <h1 className="hero-title font-sans-display" style={{ fontSize: '56px', marginBottom: '24px' }}>
+          <h1 className="hero-title font-sans-display admissions-hero-title">
             Begin your <span className="font-sans-display text-brown">journey</span> here.
           </h1>
           <p className="hero-subtitle text-muted" style={{ maxWidth: '600px', margin: '0 auto 40px' }}>
             Join our thriving community of learners. Simple, transparent, and supportive admission process.
           </p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
-            <a href="#apply-form" style={{ textDecoration: 'none' }}>
-              <Button variant="brown" size="large">Start Application</Button>
+          <div className="admissions-hero-actions">
+            <a href="#apply-form" style={{ textDecoration: 'none', width: '100%' }}>
+              <Button variant="brown" size="large" className="admissions-hero-btn">Start Application</Button>
             </a>
-            <Link to="/contact" style={{ textDecoration: 'none' }}>
-              <Button variant="outline" size="large" className="bg-white text-brown">Call Support</Button>
+            <Link to="/contact" style={{ textDecoration: 'none', width: '100%' }}>
+              <Button variant="outline" size="large" className="bg-white text-brown admissions-hero-btn">Call Support</Button>
             </Link>
           </div>
         </div>
