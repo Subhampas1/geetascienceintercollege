@@ -9,7 +9,7 @@ import './Home.css';
 const Home = () => {
   const { content } = useContext(SiteContentContext);
   const homeData = content.home;
-  
+
   const currentYear = new Date().getFullYear();
   const nextYearShort = (currentYear + 1).toString().slice(2);
   const sessionString = `${currentYear}-${nextYearShort}`;
@@ -21,7 +21,7 @@ const Home = () => {
         <div className="container hero-content">
           <div className="hero-text-col">
             <div className="hero-badge">
-              <span className="material-symbols-outlined text-green" style={{fontSize: '18px'}}>verified</span>
+              <span className="material-symbols-outlined text-green" style={{ fontSize: '18px' }}>verified</span>
               <span className="badge-text">EXCELLENCE SINCE 2015</span>
             </div>
             <h1 className="hero-title font-sans-display">
@@ -31,10 +31,10 @@ const Home = () => {
               {homeData.heroSubtitle}
             </p>
             <div className="hero-actions">
-              <Link to="/admissions" style={{textDecoration: 'none'}}>
+              <Link to="/admissions" style={{ textDecoration: 'none' }}>
                 <Button variant="primary" size="large">Start Your Application</Button>
               </Link>
-              <Link to="/academics" style={{textDecoration: 'none'}}>
+              <Link to="/academics" style={{ textDecoration: 'none' }}>
                 <Button variant="outline" size="large" className="bg-white">Explore Streams</Button>
               </Link>
             </div>
@@ -50,40 +50,40 @@ const Home = () => {
         <div className="container notice-container">
           <div className="notice-header">
             <span className="material-symbols-outlined text-orange">campaign</span>
-            <h2 className="font-sans-display" style={{whiteSpace:'nowrap'}}>Notice Board</h2>
+            <h2 className="font-sans-display" style={{ whiteSpace: 'nowrap' }}>Notice Board</h2>
           </div>
           <div className="notice-scroll-wrapper">
             <div className="notice-scroll-content">
               <div className="notice-item">
-                <Chip variant="new" style={{marginRight:'8px'}}>NEW</Chip>
+                <Chip variant="new" style={{ marginRight: '8px' }}>NEW</Chip>
                 <p>Class 11th Admission Open for Session {sessionString}</p>
               </div>
               <div className="notice-divider"></div>
               <div className="notice-item">
-                <Chip variant="update" style={{marginRight:'8px'}}>UPDATE</Chip>
+                <Chip variant="update" style={{ marginRight: '8px' }}>UPDATE</Chip>
                 <p>Summer Vacation starts from 15th May {currentYear}</p>
               </div>
               <div className="notice-divider"></div>
               <div className="notice-item">
-                <Chip variant="event" style={{marginRight:'8px'}}>EVENT</Chip>
+                <Chip variant="event" style={{ marginRight: '8px' }}>EVENT</Chip>
                 <p>Annual Science Exhibition on 25th June</p>
               </div>
               <div className="notice-divider"></div>
               {/* Duplicates for infinite scrolling */}
               <div className="notice-item">
-                <Chip variant="new" style={{marginRight:'8px'}}>NEW</Chip>
+                <Chip variant="new" style={{ marginRight: '8px' }}>NEW</Chip>
                 <p>Class 11th Admission Open for Session {sessionString}</p>
               </div>
               <div className="notice-divider"></div>
               <div className="notice-item">
-                <Chip variant="update" style={{marginRight:'8px'}}>UPDATE</Chip>
+                <Chip variant="update" style={{ marginRight: '8px' }}>UPDATE</Chip>
                 <p>Summer Vacation starts from 15th May {currentYear}</p>
               </div>
             </div>
           </div>
           <div className="notice-action">
-            <Link to="/notices" className="text-orange" style={{fontWeight: 600, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '4px', whiteSpace:'nowrap'}}>
-              See All <span className="material-symbols-outlined" style={{fontSize: '16px'}}>arrow_forward_ios</span>
+            <Link to="/notices" className="text-orange" style={{ fontWeight: 600, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '4px', whiteSpace: 'nowrap' }}>
+              See All <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>arrow_forward_ios</span>
             </Link>
           </div>
         </div>
@@ -97,8 +97,8 @@ const Home = () => {
             <div className="topper-profile">
               <div className="topper-image-wrapper">
                 <div className="topper-bg bg-green-light"></div>
-                <div className="topper-img border-green" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white'}}>
-                  <span className="material-symbols-outlined text-green" style={{fontSize: '64px'}}>science</span>
+                <div className="topper-img border-green" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white' }}>
+                  <span className="material-symbols-outlined text-green" style={{ fontSize: '64px' }}>science</span>
                 </div>
                 <div className="topper-badge bg-green">#06</div>
               </div>
@@ -108,8 +108,8 @@ const Home = () => {
             <div className="topper-profile">
               <div className="topper-image-wrapper">
                 <div className="topper-bg bg-orange-light"></div>
-                <div className="topper-img border-orange" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white'}}>
-                  <span className="material-symbols-outlined text-orange" style={{fontSize: '64px'}}>trending_up</span>
+                <div className="topper-img border-orange" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white' }}>
+                  <span className="material-symbols-outlined text-orange" style={{ fontSize: '64px' }}>trending_up</span>
                 </div>
                 <div className="topper-badge bg-orange">#11</div>
               </div>
@@ -119,8 +119,8 @@ const Home = () => {
             <div className="topper-profile">
               <div className="topper-image-wrapper">
                 <div className="topper-bg bg-yellow-light"></div>
-                <div className="topper-img border-yellow" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white'}}>
-                  <span className="material-symbols-outlined text-yellow" style={{fontSize: '64px'}}>palette</span>
+                <div className="topper-img border-yellow" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white' }}>
+                  <span className="material-symbols-outlined text-yellow" style={{ fontSize: '64px' }}>palette</span>
                 </div>
                 <div className="topper-badge bg-yellow">#13</div>
               </div>
@@ -128,9 +128,9 @@ const Home = () => {
               <p>Distinguished performance in humanities and creative studies.</p>
             </div>
           </div>
-          
+
           <div className="text-center mt-16" style={{ marginTop: '64px' }}>
-            <Link to="/toppers" style={{textDecoration: 'none'}}>
+            <Link to="/toppers" style={{ textDecoration: 'none' }}>
               <Button variant="outline" size="large" className="text-brown" style={{ borderColor: 'var(--color-brown-primary)' }}>See Our Toppers Gallery</Button>
             </Link>
           </div>
@@ -138,24 +138,24 @@ const Home = () => {
       </section>
 
 
-      
+
       {/* The Advantage */}
       <section className="advantage-section bg-white">
         <div className="container">
           <h2 className="section-title text-center">The Advantage</h2>
           <div className="advantage-grid">
             <div className="advantage-item">
-              <span className="material-symbols-outlined text-brown mb-4" style={{fontSize:'32px'}}>calendar_month</span>
+              <span className="material-symbols-outlined text-brown mb-4" style={{ fontSize: '32px' }}>calendar_month</span>
               <h4 className="font-sans-display">Enrichment Classes</h4>
               <p>Consistent structure of daily sessions ensuring full syllabus coverage with time for revision.</p>
             </div>
             <div className="advantage-item">
-              <span className="material-symbols-outlined text-green mb-4" style={{fontSize:'32px'}}>forum</span>
+              <span className="material-symbols-outlined text-green mb-4" style={{ fontSize: '32px' }}>forum</span>
               <h4 className="font-sans-display">Doubt Clearing</h4>
               <p>Dedicated evening sessions for one-on-one interaction and concept clarification.</p>
             </div>
             <div className="advantage-item">
-              <span className="material-symbols-outlined text-orange mb-4" style={{fontSize:'32px'}}>menu_book</span>
+              <span className="material-symbols-outlined text-orange mb-4" style={{ fontSize: '32px' }}>menu_book</span>
               <h4 className="font-sans-display">Competitive Exams</h4>
               <p>Intensive coaching specifically designed for JEE and NEET excellence.</p>
             </div>
@@ -166,12 +166,12 @@ const Home = () => {
       {/* About Section */}
       <section className="about-section bg-cream">
         <div className="container text-center">
-          <Chip variant="event" className="bg-white text-brown mb-4" style={{boxShadow: '0 4px 12px rgba(0,0,0,0.05)', border: '1px solid rgba(0,0,0,0.05)'}}>ABOUT US</Chip>
+          <Chip variant="event" className="bg-white text-brown mb-4" style={{ boxShadow: '0 4px 12px rgba(0,0,0,0.05)', border: '1px solid rgba(0,0,0,0.05)' }}>ABOUT US</Chip>
           <div className="mb-6">
-            <img src="/logo.png" alt="Geeta Science Inter College" style={{height: '160px', width: 'auto'}} onError={(e) => e.target.style.display='none'} />
+            <img src="/logo.png" alt="Geeta Science Inter College" style={{ height: '160px', width: 'auto' }} onError={(e) => e.target.style.display = 'none'} />
           </div>
           <h2 className="section-title mb-6">Fostering Innovation & Character</h2>
-          <p className="section-subtitle" style={{maxWidth: '800px', margin: '0 auto', fontSize: '18px', lineHeight: '1.8', color: 'var(--color-navy)'}}>
+          <p className="section-subtitle" style={{ maxWidth: '800px', margin: '0 auto', fontSize: '18px', lineHeight: '1.8', color: 'var(--color-navy)' }}>
             Established in 2015, Geeta Science Inter College has been a beacon of academic excellence. We believe in providing an environment where learning goes beyond textbooks. Our holistic approach integrates modern educational methodologies with traditional values, ensuring that our students are not just academically proficient but also ethically grounded. We take pride in our state-of-the-art facilities, experienced faculty, and a vibrant community that encourages every student to explore their true potential.
           </p>
         </div>
@@ -181,10 +181,10 @@ const Home = () => {
       <section className="director-section bg-purple">
         <div className="container director-container">
           <div className="director-image-wrapper">
-            <img src="/director.png" alt="Principal" className="director-img" onError={(e) => e.target.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'} />
+            <img src="/director.png" alt="Principal" className="director-img" onError={(e) => e.target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'} />
           </div>
           <div className="director-content">
-            <Chip variant="new" className="mb-4" style={{display: 'inline-block'}}>LEADERSHIP</Chip>
+            <Chip variant="new" className="mb-4" style={{ display: 'inline-block' }}>LEADERSHIP</Chip>
             <h2 className="section-title text-left mb-6">Principal's Message</h2>
             <div className="quote-mark">"</div>
             <p className="director-quote text-navy">
@@ -204,11 +204,11 @@ const Home = () => {
           <div className="cta-block bg-brown">
             <div className="cta-content">
               <h2 className="text-white">Begin Your Success Story</h2>
-              <p className="text-white" style={{opacity: 0.9}}>Enrollment is now open for the upcoming {sessionString} academic session at Geeta Science Inter College. Secure your seat in a world of discovery.</p>
+              <p className="text-white" style={{ opacity: 0.9 }}>Enrollment is now open for the upcoming {sessionString} academic session at Geeta Science Inter College. Secure your seat in a world of discovery.</p>
             </div>
-            <Link to="/admissions" style={{textDecoration: 'none'}}>
-              <Button variant="outline" size="large" className="text-brown" style={{backgroundColor: 'white', border:'none', padding:'16px 32px', borderRadius: 'var(--radius-full)'}}>
-                Apply for Admission Now <span className="material-symbols-outlined ml-2" style={{fontSize:'18px'}}>rocket_launch</span>
+            <Link to="/admissions" style={{ textDecoration: 'none' }}>
+              <Button variant="outline" size="large" className="text-brown" style={{ backgroundColor: 'white', border: 'none', padding: '16px 32px', borderRadius: 'var(--radius-full)' }}>
+                Apply for Admission Now <span className="material-symbols-outlined ml-2" style={{ fontSize: '18px' }}>rocket_launch</span>
               </Button>
             </Link>
           </div>

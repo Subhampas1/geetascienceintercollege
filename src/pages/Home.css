@@ -192,9 +192,10 @@ section {
 }
 
 .toppers-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 80px;
+  justify-items: center;
 }
 
 .topper-profile {

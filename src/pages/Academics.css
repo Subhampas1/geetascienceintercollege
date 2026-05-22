@@ -274,6 +274,17 @@
   line-height: 1.6;
 }
 
+.academics-cta-actions {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.academics-cta-btn {
+  width: 200px;
+}
+
 @media (max-width: 1024px) {
   .bento-grid { grid-template-columns: repeat(2, 1fr); }
   .stream-vertical-card { grid-column: span 1; }
@@ -295,6 +306,9 @@
   .competitive-actions { flex-direction: column; align-items: center; }
   .competitive-graphic { clip-path: none; width: 100%; min-height: 300px; }
   .advantage-grid { grid-template-columns: 1fr; gap: 40px; }
+  
+  .academics-cta-actions { flex-direction: column; width: 100%; }
+  .academics-cta-btn { width: 100% !important; }
 }
 
 @media (max-width: 576px) {

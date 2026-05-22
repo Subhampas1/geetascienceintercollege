@@ -164,12 +164,12 @@ const Academics = () => {
           <div className="cta-block bg-navy text-center" style={{ flexDirection: 'column', padding: '80px 40px' }}>
             <h2 className="text-white font-sans-display" style={{ fontSize: '36px', marginBottom: '16px' }}>Ready to start your journey?</h2>
             <p className="text-white" style={{ opacity: 0.8, maxWidth: '500px', margin: '0 auto 40px' }}>Join the community of explorers at Geeta Science Inter College and unlock your full potential.</p>
-            <div style={{ display: 'flex', gap: '24px', justifyContent: 'center' }}>
-              <Link to="#" style={{ textDecoration: 'none' }}>
-                <Button variant="primary" size="large" className="bg-white text-navy" style={{ border: 'none', width: '200px' }}>Brochure</Button>
+            <div className="academics-cta-actions">
+              <Link to="#" style={{ textDecoration: 'none', width: '100%' }}>
+                <Button variant="primary" size="large" className="bg-white text-navy academics-cta-btn" style={{ border: 'none' }}>Brochure</Button>
               </Link>
-              <Link to="/contact" style={{ textDecoration: 'none' }}>
-                <Button variant="outline" size="large" className="text-white" style={{ borderColor: 'rgba(255,255,255,0.2)', width: '200px' }}>Schedule a Visit</Button>
+              <Link to="/contact" style={{ textDecoration: 'none', width: '100%' }}>
+                <Button variant="outline" size="large" className="text-white academics-cta-btn" style={{ borderColor: 'rgba(255,255,255,0.2)' }}>Schedule a Visit</Button>
               </Link>
             </div>
           </div>
