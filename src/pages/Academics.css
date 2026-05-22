@@ -300,7 +300,8 @@
 }
 
 @media (max-width: 768px) {
-  .academics-header { padding: 100px 0 64px; }
+  .academics-header { padding: 140px 0 16px; }
+  .streams-bento-section { padding: 16px 0 60px; }
   .bento-grid { grid-template-columns: 1fr; }
   .stream-vertical-card, .competitive-support-card { grid-column: span 1; }
   
