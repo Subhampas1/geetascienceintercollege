@@ -81,16 +81,16 @@ const Academics = () => {
             </div>
 
             {/* Competitive Exam Support Card */}
-            <Card className="competitive-support-card bg-navy text-white">
+            <Card className="competitive-support-card bg-white">
               <div className="competitive-content">
-                <div className="competitive-badge">EXAM EXCELLENCE</div>
-                <h2 className="text-white" style={{ fontFamily: 'var(--font-serif)' }}>JEE & NEET Support</h2>
-                <p className="text-white" style={{ opacity: 0.8 }}>Beyond regular classes, we provide specialized JEE and NEET coaching modules. Our curriculum is perfectly aligned with competitive exam patterns to ensure 100% confidence.</p>
+                <div className="competitive-badge" style={{ backgroundColor: 'rgba(240, 139, 58, 0.1)', color: 'var(--color-orange)' }}>EXAM EXCELLENCE</div>
+                <h2 className="text-navy" style={{ fontFamily: 'var(--font-serif)' }}>JEE & NEET Support</h2>
+                <p className="text-muted">Beyond regular classes, we provide specialized JEE and NEET coaching modules. Our curriculum is perfectly aligned with competitive exam patterns to ensure 100% confidence.</p>
                 <div className="competitive-actions">
-                  <div className="competitive-pill">
+                  <div className="competitive-pill" style={{ border: '1px solid var(--color-border)' }}>
                     <span className="material-symbols-outlined">menu_book</span> JEE Prep
                   </div>
-                  <div className="competitive-pill">
+                  <div className="competitive-pill" style={{ border: '1px solid var(--color-border)' }}>
                     <span className="material-symbols-outlined">edit_document</span> NEET Prep
                   </div>
                 </div>
@@ -163,15 +163,15 @@ const Academics = () => {
       {/* CTA Block */}
       <section className="cta-section bg-white" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="cta-block bg-navy text-center" style={{ flexDirection: 'column', padding: '80px 40px' }}>
-            <h2 className="text-white font-sans-display" style={{ fontSize: '36px', marginBottom: '16px' }}>Ready to start your journey?</h2>
-            <p className="text-white" style={{ opacity: 0.8, maxWidth: '500px', margin: '0 auto 40px' }}>Join the community of explorers at Geeta Science Inter College and unlock your full potential.</p>
+          <div className="cta-block bg-cream text-center" style={{ flexDirection: 'column', padding: '80px 40px' }}>
+            <h2 className="text-navy font-sans-display" style={{ fontSize: '36px', marginBottom: '16px' }}>Ready to start your journey?</h2>
+            <p className="text-muted" style={{ maxWidth: '500px', margin: '0 auto 40px' }}>Join the community of explorers at Geeta Science Inter College and unlock your full potential.</p>
             <div className="academics-cta-actions">
               <Link to="#" style={{ textDecoration: 'none', width: '100%' }}>
-                <Button variant="primary" size="large" className="bg-white text-navy academics-cta-btn" style={{ border: 'none' }}>Brochure</Button>
+                <Button variant="primary" size="large" className="bg-orange text-white academics-cta-btn" style={{ border: 'none' }}>Brochure</Button>
               </Link>
               <Link to="/contact" style={{ textDecoration: 'none', width: '100%' }}>
-                <Button variant="outline" size="large" className="text-white academics-cta-btn" style={{ borderColor: 'rgba(255,255,255,0.2)' }}>Schedule a Visit</Button>
+                <Button variant="outline" size="large" className="text-navy academics-cta-btn" style={{ borderColor: 'var(--color-border)' }}>Schedule a Visit</Button>
               </Link>
             </div>
           </div>
