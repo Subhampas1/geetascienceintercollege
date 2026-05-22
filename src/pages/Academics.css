@@ -284,6 +284,14 @@
   align-items: center;
 }
 
+.masonry-card {
+  box-shadow: none !important;
+}
+
+.masonry-card:hover {
+  box-shadow: none !important;
+}
+
 .academics-cta-btn {
   width: 200px;
 }
