@@ -5,23 +5,28 @@
   display: block;
   font-weight: 600;
   margin-bottom: 8px;
-  color: var(--color-on-surface);
+  color: var(--color-navy);
 }
 .input-field-group input,
 .input-field-group textarea {
   width: 100%;
   padding: 16px 20px;
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-outline-variant);
-  background: var(--color-cream-bg);
-  font-family: var(--font-body);
+  border: 1.5px solid #d0d0d0;
+  background: white;
+  font-family: var(--font-sans);
   font-size: 16px;
+  color: var(--color-text-main);
   transition: all 0.2s;
+}
+.input-field-group input::placeholder,
+.input-field-group textarea::placeholder {
+  color: #a0a0a0;
 }
 .input-field-group input:focus,
 .input-field-group textarea:focus {
   outline: none;
-  border-color: var(--color-primary);
-  background: var(--color-surface-container-lowest);
-  box-shadow: 0 0 0 4px rgba(143, 78, 0, 0.1);
+  border-color: var(--color-orange);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(240, 139, 58, 0.15);
 }
