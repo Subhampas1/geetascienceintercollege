@@ -105,13 +105,7 @@ const Admissions = () => {
         </div>
       </section>
 
-      {/* Notice Alert */}
-      <div className="container" style={{ paddingBottom: '80px' }}>
-        <div className="notice-alert">
-          <span className="material-symbols-outlined">info</span>
-          <span><strong>Important:</strong> The last date for early bird scholarship applications is May 30th, 2024</span>
-        </div>
-      </div>
+
 
       {/* Online Application Form Section */}
       <section className="application-form-section bg-cream" id="apply-form">
