@@ -191,6 +191,10 @@ section {
   color: var(--color-navy);
 }
 
+.toppers-section .section-title {
+  margin-bottom: 80px;
+}
+
 .toppers-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
