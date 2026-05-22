@@ -195,8 +195,15 @@
     display: none; /* Hide scrollbar in Chrome/Safari */
   }
   .topper-card-full {
-    min-width: 85vw;
+    width: 85vw;
+    max-width: 85vw;
     scroll-snap-align: center;
     flex-shrink: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .topper-quote {
+    word-wrap: break-word;
+    white-space: pre-wrap;
   }
 }
