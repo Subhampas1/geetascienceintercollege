@@ -16,6 +16,7 @@ const AdminLogin = () => {
     const validPassword = import.meta.env.VITE_ADMIN_PASSWORD || 'admin';
 
     if (username === validUsername && password === validPassword) {
+      localStorage.setItem('isAdminLoggedIn', 'true');
       navigate('/admin/dashboard');
     } else {
       alert('Invalid credentials. Please try again.');

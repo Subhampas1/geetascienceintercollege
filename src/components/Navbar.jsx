@@ -7,6 +7,7 @@ const Navbar = () => {
   const location = useLocation();
   const [isCollege, setIsCollege] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const isAdminLoggedIn = localStorage.getItem('isAdminLoggedIn') === 'true';
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -49,11 +50,21 @@ const Navbar = () => {
           <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>
             Contact
           </Link>
+          {isAdminLoggedIn && (
+            <Link to="/admin/dashboard" className="mobile-only-action" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button variant="outline" size="medium" style={{width: '100%', borderColor: 'var(--color-border)', color: 'var(--color-navy)'}}>Admin Panel</Button>
+            </Link>
+          )}
           <Link to="/admissions" className="mobile-only-action" onClick={() => setIsMobileMenuOpen(false)}>
             <Button variant="orange" size="medium" style={{backgroundColor: 'var(--color-orange)', color: 'white', border: 'none', width: '100%'}}>Apply Now</Button>
           </Link>
         </div>
         <div className="navbar-actions">
+          {isAdminLoggedIn && (
+            <Link to="/admin/dashboard" className="desktop-only-action" style={{ textDecoration: 'none', marginRight: '16px' }}>
+              <Button variant="outline" size="medium" style={{color: 'var(--color-navy)', borderColor: 'var(--color-border)'}}>Admin Panel</Button>
+            </Link>
+          )}
           <Link to="/admissions" className="desktop-only-action" style={{ textDecoration: 'none' }}>
             <Button variant="orange" size="medium" style={{backgroundColor: 'var(--color-orange)', color: 'white', border: 'none'}}>Apply Now</Button>
           </Link>

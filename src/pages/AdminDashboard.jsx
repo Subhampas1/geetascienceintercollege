@@ -26,6 +26,7 @@ const AdminDashboard = () => {
   ]);
 
   const handleLogout = () => {
+    localStorage.removeItem('isAdminLoggedIn');
     navigate('/admin');
   };
 
@@ -486,6 +487,7 @@ const AdminDashboard = () => {
             {activeTab === 'settings' && 'Site Settings'}
           </h2>
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <Link to="/" style={{ fontSize: '13px', fontWeight: 600, color: 'var(--color-navy)', textDecoration: 'underline' }} className="admin-back-link">Back to Website</Link>
             <span style={{ fontSize: '14px', fontWeight: 500, color: 'var(--color-navy)' }}>Welcome, Admin</span>
             <Button variant="outline" onClick={handleLogout} style={{ padding: '8px 16px', fontSize: '13px' }}>Logout</Button>
           </div>
