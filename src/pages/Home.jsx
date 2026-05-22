@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
+import SEO from '../components/SEO';
 import Chip from '../components/Chip';
 import Card from '../components/Card';
 import { SiteContentContext } from '../context/SiteContentContext';
@@ -16,6 +17,11 @@ const Home = () => {
 
   return (
     <div className="home-page">
+      <SEO 
+        title="Welcome" 
+        description="Geeta Science Inter College is the premier destination for students aiming for excellence in Science and Commerce streams. Specialized coaching for JEE and NEET." 
+        keywords="best science college, Geeta Science Inter College, JEE preparation, NEET coaching, intermediate college" 
+      />
       {/* Hero Section */}
       <header className="hero-section">
         <div className="container hero-content">

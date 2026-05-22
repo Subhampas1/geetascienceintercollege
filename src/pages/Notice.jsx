@@ -1,5 +1,6 @@
 import React from 'react';
 import Chip from '../components/Chip';
+import SEO from '../components/SEO';
 
 const Notice = () => {
   const notices = [
@@ -22,6 +23,11 @@ const Notice = () => {
 
   return (
     <div className="notice-page bg-cream" style={{minHeight: '80vh', padding: '160px 0 120px'}}>
+      <SEO 
+        title="Notice Board" 
+        description="Stay updated with the latest announcements, events, and admission alerts at Geeta Science Inter College." 
+        keywords="college notices, admission alerts, events, Geeta Science Inter College updates" 
+      />
       <div className="container">
         <div className="text-center mb-16">
           <h1 className="text-navy mb-4">Notice Board</h1>

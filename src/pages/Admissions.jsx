@@ -3,12 +3,19 @@ import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import Chip from '../components/Chip';
 import Card from '../components/Card';
+import SEO from '../components/SEO';
 import InputField from '../components/InputField';
 import './Admissions.css';
 
 const Admissions = () => {
   return (
     <div className="admissions-page bg-cream">
+      <SEO 
+        title="Admissions & Application" 
+        description="Apply for admission to Geeta Science Inter College. Check the admission process, required documents, and apply online for Class 11 and 12." 
+        keywords="college admissions, intermediate admission, apply online, Class 11 admission" 
+      />
+
       {/* Hero Section */}
       <section className="admissions-hero text-center">
         <div className="container">

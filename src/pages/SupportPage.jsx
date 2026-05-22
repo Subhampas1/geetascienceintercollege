@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import { SiteContentContext } from '../context/SiteContentContext';
+import SEO from '../components/SEO';
 
 const SupportPage = ({ title }) => {
   const { content } = useContext(SiteContentContext);
@@ -87,6 +88,10 @@ Submission of an online application does not guarantee admission.`}
 
   return (
     <div className="support-page bg-cream" style={{padding: '160px 0 120px', minHeight: '80vh'}}>
+      <SEO 
+        title={title} 
+        description={`${title} for Geeta Science Inter College. Student resources and policies.`} 
+      />
       <div className="container">
         <h1 className="text-navy mb-8" style={{fontSize: '48px', borderBottom: '2px solid var(--color-border)', paddingBottom: '24px', maxWidth: '800px'}}>
           {title}

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 import Button from '../components/Button';
+import SEO from '../components/SEO';
 import { SiteContentContext } from '../context/SiteContentContext';
 import './Academics.css';
 
@@ -9,7 +10,13 @@ const Academics = () => {
   const { content } = useContext(SiteContentContext);
   const academicsData = content.academics;
   return (
-    <div className="academics-page">
+    <div className="academics-page bg-cream">
+      <SEO 
+        title="Academics & Streams" 
+        description="Discover our Science, Commerce, and Arts streams. We provide world-class education with integrated JEE and NEET competitive exam support." 
+        keywords="Science stream, Commerce stream, Arts stream, JEE coaching, NEET coaching, intermediate syllabus" 
+      />
+      
       {/* Header Section */}
       <section className="academics-header text-center bg-cream">
         <div className="container">

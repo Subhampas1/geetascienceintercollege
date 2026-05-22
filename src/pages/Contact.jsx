@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Card from '../components/Card';
 import InputField from '../components/InputField';
 import Button from '../components/Button';
+import SEO from '../components/SEO';
 import { SiteContentContext } from '../context/SiteContentContext';
 import './Contact.css';
 
@@ -9,7 +10,13 @@ const Contact = () => {
   const { content } = useContext(SiteContentContext);
   const contactData = content.contact;
   return (
-    <div className="contact-page bg-purple">
+    <div className="contact-page bg-cream">
+      <SEO 
+        title="Contact Us" 
+        description="Get in touch with Geeta Science Inter College. Find our campus address, phone numbers, email, and office hours." 
+        keywords="contact college, Geeta Science address, admission enquiry, college phone number" 
+      />
+
       {/* Header */}
       <section className="contact-header text-center">
         <div className="container">

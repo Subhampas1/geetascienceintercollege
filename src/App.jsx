@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import MainLayout from './layouts/MainLayout';
 import Home from './pages/Home';
 import Academics from './pages/Academics';
@@ -14,8 +15,9 @@ import { SiteContentProvider } from './context/SiteContentContext';
 
 function App() {
   return (
-    <SiteContentProvider>
-      <Router>
+    <HelmetProvider>
+      <SiteContentProvider>
+        <Router>
       <Routes>
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
@@ -36,9 +38,10 @@ function App() {
             </Routes>
           </MainLayout>
         } />
-      </Routes>
-      </Router>
-    </SiteContentProvider>
+        </Routes>
+        </Router>
+      </SiteContentProvider>
+    </HelmetProvider>
   );
 }
 

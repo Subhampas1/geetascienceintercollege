@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import Card from '../components/Card';
 import Chip from '../components/Chip';
 import { SiteContentContext } from '../context/SiteContentContext';
+import SEO from '../components/SEO';
 import './ToppersGallery.css';
 
 const ToppersGallery = () => {
@@ -14,6 +15,12 @@ const ToppersGallery = () => {
 
   return (
     <div className="toppers-page bg-cream">
+      <SEO 
+        title="Toppers Gallery" 
+        description="Celebrate the outstanding achievements of our students. View our board exam toppers and success stories across all streams." 
+        keywords="board toppers, student achievements, success stories, intermediate results" 
+      />
+
       {/* Header */}
       <section className="toppers-header text-center">
         <div className="container">
