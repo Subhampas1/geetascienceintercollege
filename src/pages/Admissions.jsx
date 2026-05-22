@@ -19,10 +19,10 @@ const Admissions = () => {
             Join our thriving community of learners. Simple, transparent, and supportive admission process.
           </p>
           <div className="admissions-hero-actions">
-            <a href="#apply-form" style={{ textDecoration: 'none', width: '100%' }}>
+            <a href="#apply-form" className="admissions-hero-link">
               <Button variant="brown" size="large" className="admissions-hero-btn">Start Application</Button>
             </a>
-            <Link to="/contact" style={{ textDecoration: 'none', width: '100%' }}>
+            <Link to="/contact" className="admissions-hero-link">
               <Button variant="outline" size="large" className="bg-white text-brown admissions-hero-btn">Call Support</Button>
             </Link>
           </div>
