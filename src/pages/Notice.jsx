@@ -33,7 +33,7 @@ const Notice = () => {
             backgroundColor: 'white', 
             borderRadius: 'var(--radius-xl)', 
             boxShadow: '0 10px 40px rgba(0,0,0,0.03)',
-            padding: '8px 40px',
+            padding: '24px',
             maxHeight: '600px',
             overflowY: 'auto'
           }}>
