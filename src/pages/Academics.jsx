@@ -26,9 +26,10 @@ const Academics = () => {
       <section className="streams-bento-section bg-cream">
         <div className="container">
           <div className="bento-grid">
-
-            {/* Science Card */}
-            <Card className="stream-vertical-card bg-white">
+            
+            <div className="streams-scroll-container">
+              {/* Science Card */}
+              <Card className="stream-vertical-card bg-white">
               <div className="stream-vertical-graphic" style={{ background: 'linear-gradient(135deg, rgba(43, 181, 133, 0.05), rgba(43, 181, 133, 0.2))' }}>
                 <div className="glow-circle" style={{ background: 'var(--color-green)' }}></div>
                 <span className="material-symbols-outlined main-icon text-green icon-no-select" aria-hidden="true">science</span>
@@ -76,7 +77,8 @@ const Academics = () => {
                   <div className="stream-vertical-pill">Literature</div>
                 </div>
               </div>
-            </Card>
+              </Card>
+            </div>
 
             {/* Competitive Exam Support Card */}
             <Card className="competitive-support-card bg-navy text-white">

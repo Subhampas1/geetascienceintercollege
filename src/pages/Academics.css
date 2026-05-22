@@ -18,8 +18,11 @@
   gap: 32px;
 }
 
-/* Stream Cards Refactor matching screenshot */
 /* Vertical Stream Cards (Light Theme of NEET/JEE Banner) */
+.streams-scroll-container {
+  display: contents;
+}
+
 .stream-vertical-card {
   grid-column: span 4;
   display: flex;
@@ -300,6 +303,30 @@
   .academics-header { padding: 100px 0 32px; }
   .bento-grid { grid-template-columns: 1fr; }
   .stream-vertical-card, .competitive-support-card { grid-column: span 1; }
+  
+  .streams-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 24px;
+    margin: 0 -24px;
+    padding: 0 24px 24px 24px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 24px;
+  }
+  .streams-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .stream-vertical-card {
+    min-width: 85vw;
+    max-width: 85vw;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
   
   .competitive-support-card { flex-direction: column !important; }
   .competitive-content { padding: 40px 32px; text-align: center; }
