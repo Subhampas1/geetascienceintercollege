@@ -31,6 +31,10 @@
   letter-spacing: -0.5px;
 }
 
+.nav-logo-text-mobile {
+  display: none;
+}
+
 .navbar-links {
   display: flex;
   gap: 40px;
@@ -148,5 +152,8 @@
 
   .nav-logo-text-full, .nav-logo-text-short {
     display: none !important;
+  }
+  .nav-logo-text-mobile {
+    display: inline-block !important;
   }
 }
