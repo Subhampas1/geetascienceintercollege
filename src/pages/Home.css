@@ -198,7 +198,7 @@ section {
 .toppers-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 80px;
+  gap: 40px;
   justify-items: center;
 }
 
