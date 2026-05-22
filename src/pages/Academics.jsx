@@ -140,22 +140,22 @@ const Academics = () => {
           </p>
 
           <div className="features-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }}>
-            <Card className="masonry-card bg-purple" style={{ padding: '32px' }}>
+            <div className="masonry-card" style={{ padding: '32px' }}>
               <span className="material-symbols-outlined text-green mb-4" style={{ fontSize: '32px' }}>forum</span>
               <h5 className="font-sans-display" style={{ fontSize: '18px', margin: 0 }}>1 on 1 Guidance</h5>
-            </Card>
-            <Card className="masonry-card bg-purple" style={{ padding: '32px' }}>
+            </div>
+            <div className="masonry-card" style={{ padding: '32px' }}>
               <span className="material-symbols-outlined text-brown mb-4" style={{ fontSize: '32px' }}>schedule</span>
               <h5 className="font-sans-display" style={{ fontSize: '18px', margin: 0 }}>24/7 Digital Portal</h5>
-            </Card>
-            <Card className="masonry-card bg-purple" style={{ padding: '32px' }}>
+            </div>
+            <div className="masonry-card" style={{ padding: '32px' }}>
               <span className="material-symbols-outlined text-orange mb-4" style={{ fontSize: '32px' }}>groups</span>
               <h5 className="font-sans-display" style={{ fontSize: '18px', margin: 0 }}>Remedial Classes</h5>
-            </Card>
-            <Card className="masonry-card bg-purple" style={{ padding: '32px' }}>
+            </div>
+            <div className="masonry-card" style={{ padding: '32px' }}>
               <span className="material-symbols-outlined text-navy mb-4" style={{ fontSize: '32px' }}>lightbulb</span>
               <h5 className="font-sans-display" style={{ fontSize: '18px', margin: 0 }}>Concept Clinics</h5>
-            </Card>
+            </div>
           </div>
         </div>
       </section>
