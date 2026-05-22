@@ -337,13 +337,13 @@
     overflow: hidden;
   }
   
-  .competitive-support-card { flex-direction: column !important; }
+  .competitive-support-card { flex-direction: column-reverse !important; }
   .competitive-content { padding: 32px 24px; text-align: center; }
   .competitive-content h2 { font-size: 28px !important; margin-bottom: 12px; }
   .competitive-content p { font-size: 14px; margin-bottom: 24px; }
   .competitive-actions { flex-direction: column; align-items: center; gap: 12px; }
-  .competitive-graphic { clip-path: none; width: 100%; min-height: 200px; }
-  .competitive-graphic .main-icon { font-size: 80px; }
+  .competitive-graphic { clip-path: none; width: 100%; min-height: 140px; }
+  .competitive-graphic .main-icon { font-size: 64px; }
   .advantage-grid { grid-template-columns: 1fr; gap: 40px; }
   
   .academics-cta-actions { flex-direction: column; width: 100%; }
