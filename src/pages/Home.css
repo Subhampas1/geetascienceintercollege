@@ -385,6 +385,10 @@ section {
 .mb-6 { margin-bottom: 24px; }
 .text-left { text-align: left; }
 
+.director-header-mobile {
+  display: none;
+}
+
 .quote-mark {
   font-size: 80px;
   color: rgba(232, 129, 48, 0.1);
@@ -474,6 +478,8 @@ section {
   
   .director-container { flex-direction: column; text-align: center; gap: 32px; }
   .director-content { text-align: center; }
+  .director-header-desktop { display: none; }
+  .director-header-mobile { display: block; width: 100%; margin-bottom: -16px; }
   .section-title { text-align: center; font-size: 28px; }
   .director-quote { font-size: 18px; margin-bottom: 24px; }
   

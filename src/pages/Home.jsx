@@ -180,12 +180,18 @@ const Home = () => {
       {/* Principal's Message */}
       <section className="director-section bg-purple">
         <div className="container director-container">
+          <div className="director-header-mobile">
+            <Chip variant="new" className="mb-4" style={{ display: 'inline-block' }}>LEADERSHIP</Chip>
+            <h2 className="section-title text-center mb-6">Principal's Message</h2>
+          </div>
           <div className="director-image-wrapper">
             <img src="/director.png" alt="Principal" className="director-img" onError={(e) => e.target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'} />
           </div>
           <div className="director-content">
-            <Chip variant="new" className="mb-4" style={{ display: 'inline-block' }}>LEADERSHIP</Chip>
-            <h2 className="section-title text-left mb-6">Principal's Message</h2>
+            <div className="director-header-desktop">
+              <Chip variant="new" className="mb-4" style={{ display: 'inline-block' }}>LEADERSHIP</Chip>
+              <h2 className="section-title text-left mb-6">Principal's Message</h2>
+            </div>
             <div className="quote-mark">"</div>
             <p className="director-quote text-navy">
               "{homeData.principalQuote}"
