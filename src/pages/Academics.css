@@ -1,0 +1,304 @@
+/* Academics.css - 100% Fidelity */
+.academics-header {
+  padding: 140px 0 32px;
+}
+
+.academics-header .hero-subtitle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.streams-bento-section {
+  padding: 40px 0 60px;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+}
+
+/* Stream Cards Refactor matching screenshot */
+/* Vertical Stream Cards (Light Theme of NEET/JEE Banner) */
+.stream-vertical-card {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+}
+
+.stream-vertical-graphic {
+  width: 100%;
+  height: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  margin-bottom: 16px;
+}
+
+.stream-vertical-graphic .glow-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.3;
+}
+
+.stream-vertical-graphic .main-icon {
+  font-size: 64px;
+  z-index: 2;
+  text-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  animation: gentleBounce 4s ease-in-out infinite;
+}
+
+.stream-vertical-content {
+  padding: 0 24px 32px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+}
+
+.stream-vertical-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  border-radius: var(--radius-full);
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+
+.stream-vertical-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.stream-vertical-pill {
+  background: white;
+  color: var(--color-navy);
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.stream-vertical-pill::before {
+  content: '•';
+  color: var(--color-text-muted);
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.stream-vertical-pill:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-color: rgba(0,0,0,0.1);
+}
+
+
+
+/* Competitive Exam Support Card */
+.competitive-support-card {
+  grid-column: span 12;
+  border-radius: var(--radius-xl);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.competitive-content {
+  flex: 1;
+  padding: 64px;
+  max-width: 600px;
+  z-index: 2;
+  text-align: left;
+}
+
+.competitive-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-orange);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  border-radius: var(--radius-full);
+  margin-bottom: 24px;
+}
+
+.competitive-content h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.competitive-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.competitive-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.competitive-pill {
+  background: white;
+  color: var(--color-navy);
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.competitive-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.competitive-pill .material-symbols-outlined {
+  font-size: 20px;
+  color: var(--color-orange);
+}
+
+.competitive-graphic {
+  flex: 1;
+  height: 100%;
+  min-height: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(240, 139, 58, 0.05), rgba(240, 139, 58, 0.2));
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.competitive-graphic .glow-circle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: var(--color-orange);
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.2;
+}
+
+.competitive-graphic .main-icon {
+  font-size: 140px;
+  z-index: 2;
+  text-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  animation: gentleBounce 4s ease-in-out infinite;
+}
+
+.floating-element {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  z-index: 3;
+}
+
+.floating-element .material-symbols-outlined {
+  font-size: 32px;
+  color: var(--color-navy);
+}
+
+.float-1 {
+  top: 60px;
+  right: 120px;
+  animation: animFloat 5s ease-in-out infinite;
+}
+
+.float-2 {
+  bottom: 80px;
+  left: 80px;
+  animation: animFloat 6s ease-in-out infinite 1s;
+}
+
+/* The Advantage */
+.section-title {
+  font-size: 32px;
+  margin-bottom: 48px;
+  color: var(--color-navy);
+}
+
+.advantage-section {
+  padding: 80px 0;
+}
+
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.advantage-item h4 {
+  font-size: 16px;
+  color: var(--color-navy);
+  margin-bottom: 12px;
+}
+
+.advantage-item p {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+  .stream-vertical-card { grid-column: span 1; }
+  .competitive-support-card { grid-column: span 2; }
+}
+
+@media (max-width: 992px) {
+  .academics-header { padding: 120px 0 32px; }
+  .features-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+@media (max-width: 768px) {
+  .academics-header { padding: 100px 0 32px; }
+  .bento-grid { grid-template-columns: 1fr; }
+  .stream-vertical-card, .competitive-support-card { grid-column: span 1; }
+  
+  .competitive-support-card { flex-direction: column !important; }
+  .competitive-content { padding: 40px 32px; text-align: center; }
+  .competitive-actions { flex-direction: column; align-items: center; }
+  .competitive-graphic { clip-path: none; width: 100%; min-height: 300px; }
+  .advantage-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 576px) {
+  .features-grid { grid-template-columns: 1fr !important; }
+  .bento-pills { flex-direction: column; gap: 12px; }
+  .bento-pill { width: 100%; }
+}
