@@ -163,7 +163,7 @@ const Academics = () => {
       {/* CTA Block */}
       <section className="cta-section bg-white" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="cta-block bg-cream text-center" style={{ flexDirection: 'column', padding: '80px 40px' }}>
+          <div className="cta-block text-center" style={{ backgroundColor: '#F4F0EA', flexDirection: 'column', padding: '80px 40px' }}>
             <h2 className="text-navy font-sans-display" style={{ fontSize: '36px', marginBottom: '16px' }}>Ready to start your journey?</h2>
             <p className="text-muted" style={{ maxWidth: '500px', margin: '0 auto 40px' }}>Join the community of explorers at Geeta Science Inter College and unlock your full potential.</p>
             <div className="academics-cta-actions">
