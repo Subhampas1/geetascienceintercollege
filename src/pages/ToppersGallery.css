@@ -206,4 +206,20 @@
     word-wrap: break-word;
     white-space: pre-wrap;
   }
+  
+  .legacy-block {
+    padding: 40px 24px;
+    gap: 32px;
+  }
+  .legacy-content h2 {
+    font-size: 32px !important;
+  }
+  .stat-card {
+    padding: 24px;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .stat-card h3 {
+    font-size: 36px !important;
+  }
 }
