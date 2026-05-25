@@ -1,20 +1,22 @@
 :root {
-  /* Colors */
+  /* Colors - Oxford Theme (Navy & Gold) */
   --color-bg-cream: #FDFBF7;
-  --color-bg-purple: #F8F6FF;
+  --color-bg-purple: #F8FAFC; /* Slate white instead of purple */
   --color-bg-white: #FFFFFF;
   
-  --color-brown-dark: #3a2205;
-  --color-brown-primary: #945300; /* Deep golden brown */
-  --color-orange: #f08b3a; /* Apply Now button, highlights */
-  --color-navy: #191924; /* Dark blocks */
+  /* Map legacy brown variables to Navy to safely recolor the site */
+  --color-brown-dark: #0f172a; /* Deep Navy */
+  --color-brown-primary: #1e3a8a; /* Rich Oxford Blue */
   
-  --color-green: #2bb585;
-  --color-yellow: #ffb800;
+  --color-orange: #f59e0b; /* Golden Orange Accent */
+  --color-navy: #0f172a; /* Deep Navy */
   
-  --color-text-main: #2d2d2d;
-  --color-text-muted: #6b6b6b;
-  --color-border: #eaeaea;
+  --color-green: #10b981;
+  --color-yellow: #f59e0b; /* Match gold/orange */
+  
+  --color-text-main: #1e293b; /* Slate 800 */
+  --color-text-muted: #64748b; /* Slate 500 */
+  --color-border: #e2e8f0;
 
   /* Typography */
   --font-sans: 'Be Vietnam Pro', sans-serif;
@@ -138,7 +140,7 @@ h3.font-sans-display, h4.font-sans-display, h5.font-sans-display, h6.font-sans-d
 }
 
 .btn-primary:hover {
-  background-color: #e07a2a;
+  background-color: #d97706; /* Darker Gold */
 }
 
 .btn-orange {
@@ -147,7 +149,7 @@ h3.font-sans-display, h4.font-sans-display, h5.font-sans-display, h6.font-sans-d
 }
 
 .btn-orange:hover {
-  background-color: #d67b30;
+  background-color: #d97706; /* Darker Gold */
 }
 
 .btn-green {
@@ -160,12 +162,12 @@ h3.font-sans-display, h4.font-sans-display, h5.font-sans-display, h6.font-sans-d
 }
 
 .btn-purple {
-  background-color: #8e6ee8;
-  color: white;
+  background-color: #e2e8f0; /* Slate 200 */
+  color: #0f172a;
 }
 
 .btn-purple:hover {
-  background-color: #785ad6;
+  background-color: #cbd5e1; /* Slate 300 */
 }
 
 .btn-brown {
@@ -174,7 +176,7 @@ h3.font-sans-display, h4.font-sans-display, h5.font-sans-display, h6.font-sans-d
 }
 
 .btn-brown:hover {
-  background-color: #7d4600;
+  background-color: #1e40af; /* Deeper Oxford Blue */
 }
 
 @keyframes slideInUp {
