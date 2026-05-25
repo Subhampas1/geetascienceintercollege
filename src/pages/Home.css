@@ -182,8 +182,17 @@ section {
   50% { transform: translateY(-12px); }
 }
 @keyframes animPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.notice-bullet {
+  display: none; /* Hidden on desktop by default */
+}
+
+.notice-content {
+  display: flex;
+  align-items: center;
 }
 @keyframes animRotate {
   0%, 100% { transform: rotate(0deg); }
@@ -342,7 +351,26 @@ section {
     font-size: 13px;
     line-height: 1.4;
     white-space: normal;
+    margin: 0;
   }
+  
+  .notice-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .notice-bullet {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .notice-bullet.new { background-color: var(--color-green); }
+  .notice-bullet.update { background-color: var(--color-orange); }
+  .notice-bullet.event { background-color: var(--color-yellow); }
   
   /* Show duplicates for scrolling */
   .notice-scroll-content > div:nth-child(n+6) {

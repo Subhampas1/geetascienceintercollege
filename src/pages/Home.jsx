@@ -67,28 +67,43 @@ const Home = () => {
             <div className="notice-scroll-content">
               <div className="notice-item">
                 <Chip variant="new" style={{ marginRight: '8px' }}>NEW</Chip>
-                <p>Class 11th Admission Open for Session {sessionString}</p>
+                <div className="notice-content">
+                  <span className="notice-bullet new"></span>
+                  <p>Class 11th Admission Open for Session {sessionString}</p>
+                </div>
               </div>
               <div className="notice-divider"></div>
               <div className="notice-item">
                 <Chip variant="update" style={{ marginRight: '8px' }}>UPDATE</Chip>
-                <p>Summer Vacation starts from 15th May {currentYear}</p>
+                <div className="notice-content">
+                  <span className="notice-bullet update"></span>
+                  <p>Summer Vacation starts from 15th May {currentYear}</p>
+                </div>
               </div>
               <div className="notice-divider"></div>
               <div className="notice-item">
                 <Chip variant="event" style={{ marginRight: '8px' }}>EVENT</Chip>
-                <p>Annual Science Exhibition on 25th June</p>
+                <div className="notice-content">
+                  <span className="notice-bullet event"></span>
+                  <p>Annual Science Exhibition on 25th June</p>
+                </div>
               </div>
               <div className="notice-divider"></div>
               {/* Duplicates for infinite scrolling */}
               <div className="notice-item">
                 <Chip variant="new" style={{ marginRight: '8px' }}>NEW</Chip>
-                <p>Class 11th Admission Open for Session {sessionString}</p>
+                <div className="notice-content">
+                  <span className="notice-bullet new"></span>
+                  <p>Class 11th Admission Open for Session {sessionString}</p>
+                </div>
               </div>
               <div className="notice-divider"></div>
               <div className="notice-item">
                 <Chip variant="update" style={{ marginRight: '8px' }}>UPDATE</Chip>
-                <p>Summer Vacation starts from 15th May {currentYear}</p>
+                <div className="notice-content">
+                  <span className="notice-bullet update"></span>
+                  <p>Summer Vacation starts from 15th May {currentYear}</p>
+                </div>
               </div>
             </div>
           </div>
