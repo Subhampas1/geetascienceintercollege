@@ -1,22 +1,22 @@
 :root {
-  /* Colors - Ivy Emerald Theme (Deep Green & Gold) */
-  --color-bg-cream: #FDFBF7;
-  --color-bg-purple: #ecfdf5; /* Very faint mint green instead of slate/purple */
+  /* Colors - Crimson Academic Theme (Shades of Red) */
+  --color-bg-cream: #fffbfb; /* Warm white with red tint */
+  --color-bg-purple: #fef2f2; /* Soft blush background */
   --color-bg-white: #FFFFFF;
   
-  /* Map legacy brown variables to Forest Green to safely recolor the site */
-  --color-brown-dark: #022c22; /* Very Deep Emerald */
-  --color-brown-primary: #065f46; /* Rich Forest Green */
+  /* Map legacy variables to Crimson to safely recolor the site */
+  --color-brown-dark: #450a0a; /* Very Deep Crimson */
+  --color-brown-primary: #991b1b; /* Rich Crimson Red */
   
-  --color-orange: #d97706; /* Warm Gold Accent */
-  --color-navy: #022c22; /* Very Deep Emerald */
+  --color-orange: #dc2626; /* Bright Red Accent */
+  --color-navy: #450a0a; /* Very Deep Crimson */
   
   --color-green: #10b981; /* Standard semantic green */
-  --color-yellow: #d97706; /* Match gold/orange */
+  --color-yellow: #dc2626; /* Match bright red */
   
-  --color-text-main: #064e3b; /* Deep green text */
-  --color-text-muted: #475569; /* Slate for muted text */
-  --color-border: #d1fae5; /* Light green border */
+  --color-text-main: #450a0a; /* Deep red text */
+  --color-text-muted: #991b1b; /* Muted red */
+  --color-border: #fecaca; /* Light red border */
 
   /* Typography */
   --font-sans: 'Be Vietnam Pro', sans-serif;
@@ -140,7 +140,7 @@ h3.font-sans-display, h4.font-sans-display, h5.font-sans-display, h6.font-sans-d
 }
 
 .btn-primary:hover {
-  background-color: #b45309; /* Darker Gold */
+  background-color: #b91c1c; /* Darker Bright Red */
 }
 
 .btn-orange {
@@ -149,7 +149,7 @@ h3.font-sans-display, h4.font-sans-display, h5.font-sans-display, h6.font-sans-d
 }
 
 .btn-orange:hover {
-  background-color: #b45309; /* Darker Gold */
+  background-color: #b91c1c; /* Darker Bright Red */
 }
 
 .btn-green {
@@ -162,12 +162,12 @@ h3.font-sans-display, h4.font-sans-display, h5.font-sans-display, h6.font-sans-d
 }
 
 .btn-purple {
-  background-color: #d1fae5; /* Mint green */
-  color: #022c22;
+  background-color: #fecaca; /* Light red */
+  color: #450a0a;
 }
 
 .btn-purple:hover {
-  background-color: #a7f3d0; /* Darker Mint */
+  background-color: #fca5a5; /* Darker light red */
 }
 
 .btn-brown {
@@ -176,7 +176,7 @@ h3.font-sans-display, h4.font-sans-display, h5.font-sans-display, h6.font-sans-d
 }
 
 .btn-brown:hover {
-  background-color: #064e3b; /* Deep Forest Green */
+  background-color: #7f1d1d; /* Deeper Crimson Red */
 }
 
 @keyframes slideInUp {
