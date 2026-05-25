@@ -29,7 +29,7 @@ const Home = () => {
             <div className="hero-badge">
               <div style={{ position: 'relative', width: '22px', height: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-spin-slow text-green" style={{ position: 'absolute', width: '100%', height: '100%' }}>
-                  <polygon points="12 2 17 3.3 20.7 7 22 12 20.7 17 17 20.7 12 22 7 20.7 3.3 17 2 12 3.3 7 7 3.3" />
+                  <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
                 </svg>
                 <span className="material-symbols-outlined text-green" style={{ fontSize: '14px', fontWeight: 'bold', zIndex: 1 }}>check</span>
               </div>
