@@ -187,7 +187,7 @@ const Academics = () => {
                 <Button variant="primary" size="large" className="bg-orange text-white academics-cta-btn" style={{ border: 'none' }}>Brochure</Button>
               </Link>
               <Link to="/contact" style={{ textDecoration: 'none', width: '100%' }}>
-                <Button variant="outline" size="large" className="text-navy academics-cta-btn" style={{ borderColor: 'var(--color-border)' }}>Schedule a Visit</Button>
+                <Button variant="outline" size="large" className="text-navy academics-cta-btn" style={{ border: '2px solid var(--color-navy)' }}>Schedule a Visit</Button>
               </Link>
             </div>
           </div>
