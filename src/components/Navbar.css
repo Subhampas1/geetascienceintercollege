@@ -21,13 +21,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 12px 0 32px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
   font-size: 20px;
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 900 !important;
   letter-spacing: -0.5px;
   white-space: nowrap;
 }
@@ -81,7 +81,7 @@
 }
 
 .hamburger-btn:hover {
-  background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .hamburger-btn .material-symbols-outlined {
@@ -93,29 +93,54 @@
 }
 
 @media (max-width: 1100px) {
-  .navbar-links { gap: 20px; }
-  .navbar-logo { font-size: 18px !important; }
+  .navbar-links {
+    gap: 20px;
+  }
+
+  .navbar-logo {
+    font-size: 18px !important;
+  }
 }
 
 @media (max-width: 992px) {
-  .navbar-links { gap: 12px; }
-  .navbar-logo { font-size: 16px !important; }
-  .nav-link { font-size: 13px; }
+  .navbar-links {
+    gap: 12px;
+  }
+
+  .navbar-logo {
+    font-size: 16px !important;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 850px) {
-  .navbar-logo { font-size: 14px !important; gap: 4px !important; }
-  .navbar-logo img { height: 32px !important; }
+  .navbar-logo {
+    font-size: 14px !important;
+    gap: 4px !important;
+  }
+
+  .navbar-logo img {
+    height: 32px !important;
+  }
 }
 
 @media (max-width: 768px) {
   .desktop-only-action {
     display: none;
   }
-  
-  .navbar-logo { font-size: 18px !important; } /* Font size can increase again because links are hidden */
-  .navbar-logo img { height: 36px !important; }
-  
+
+  .navbar-logo {
+    font-size: 18px !important;
+  }
+
+  /* Font size can increase again because links are hidden */
+  .navbar-logo img {
+    height: 36px !important;
+  }
+
   .hamburger-btn {
     display: flex;
     align-items: center;
@@ -125,7 +150,7 @@
   .navbar-container {
     padding: 0 16px;
   }
-  
+
   .navbar-links {
     display: none;
     position: absolute;
@@ -137,7 +162,7 @@
     -webkit-backdrop-filter: blur(12px);
     padding: 24px;
     border-radius: var(--radius-lg);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
@@ -174,6 +199,7 @@
     font-size: 15px !important;
     gap: 4px !important;
   }
+
   .navbar-logo img {
     height: 32px !important;
   }
@@ -183,6 +209,7 @@
   .navbar-logo {
     font-size: 13px !important;
   }
+
   .navbar-logo img {
     height: 28px !important;
   }
@@ -192,6 +219,7 @@
   .navbar-logo {
     font-size: 11px !important;
   }
+
   .navbar-logo img {
     height: 24px !important;
   }
