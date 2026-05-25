@@ -40,7 +40,7 @@ const Contact = () => {
                 <span className="material-symbols-outlined text-brown">location_on</span>
                 <div>
                   <strong className="text-navy">Main Campus</strong>
-                  <p>{contactData.address}</p>
+                  <p>Jabra Rd, Jabra, Hazaribagh, Jharkhand 825301</p>
                 </div>
               </div>
 

@@ -20,7 +20,7 @@ const defaultContent = {
     artsDesc: "Explore the profound depths of human society and culture. Unleash your creative and analytical potential through immersive studies in literature, history, and behavioral sciences."
   },
   contact: {
-    address: "Katghara, Silwar Range, Kesura More, Sarauni Road, Hazaribag, Jharkhand",
+    address: "Jabra Rd, Jabra, Hazaribagh, Jharkhand 825301",
     phone1: "+91 98765 43210",
     phone2: "+91 98765 43211",
     email1: "info@geetascience.edu",
