@@ -39,7 +39,9 @@ const Notice = () => {
             backgroundColor: 'white', 
             borderRadius: 'var(--radius-xl)', 
             boxShadow: '0 10px 40px rgba(0,0,0,0.03)',
-            padding: '32px'
+            padding: '32px',
+            maxHeight: '600px',
+            overflowY: 'auto'
           }}>
             <div style={{display: 'flex', flexDirection: 'column'}}>
               {sortedNotices.map((n, i) => {
