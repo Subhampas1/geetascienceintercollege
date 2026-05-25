@@ -28,10 +28,10 @@ const Admissions = () => {
 
   return (
     <div className="admissions-page bg-cream">
-      <SEO 
-        title="Admissions & Application" 
-        description="Apply for admission to Geeta Science Inter College. Check the admission process, required documents, and apply online for Class 11 and 12." 
-        keywords="college admissions, intermediate admission, apply online, Class 11 admission" 
+      <SEO
+        title="Admissions & Application"
+        description="Apply for admission to Geeta Science Inter College. Check the admission process, required documents, and apply online for Class 11 and 12."
+        keywords="college admissions, intermediate admission, apply online, Class 11 admission"
       />
 
       {/* Hero Section */}
@@ -187,7 +187,7 @@ const Admissions = () => {
       <section className="assistance-section bg-cream text-center">
         <div className="container">
           <h2 className="font-sans-display mb-4">Need Assistance?</h2>
-          <p className="mb-6" style={{maxWidth: '600px', margin: '0 auto 32px'}}>Our admission counselors are here to help you navigate through the process and answer any questions you might have.</p>
+          <p className="mb-6" style={{ maxWidth: '600px', margin: '0 auto 32px' }}>Our admission counselors are here to help you navigate through the process and answer any questions you might have.</p>
           <Link to="/contact" style={{ textDecoration: 'none' }}>
             <Button variant="outline" size="large" className="text-brown" style={{ borderColor: 'var(--color-brown-primary)' }}>Contact Admissions Office</Button>
           </Link>

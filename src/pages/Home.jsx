@@ -130,7 +130,7 @@ const Home = () => {
           <div className="notice-mobile-pagination">
             <span className="dot active"></span>
             <span className="dot"></span>
-            <span className="material-symbols-outlined text-orange" style={{fontSize: '16px'}}>arrow_forward_ios</span>
+            <span className="material-symbols-outlined text-orange" style={{ fontSize: '16px' }}>arrow_forward_ios</span>
           </div>
         </div>
       </section>
