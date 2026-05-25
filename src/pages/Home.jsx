@@ -27,9 +27,11 @@ const Home = () => {
         <div className="container hero-content">
           <div className="hero-text-col">
             <div className="hero-badge">
-              <div style={{ position: 'relative', width: '20px', height: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <div className="animate-spin-slow" style={{ position: 'absolute', width: '100%', height: '100%', border: '2px dashed var(--color-green)', borderRadius: '50%' }}></div>
-                <span className="material-symbols-outlined text-green" style={{ fontSize: '14px', fontWeight: 'bold' }}>check</span>
+              <div style={{ position: 'relative', width: '22px', height: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-spin-slow text-green" style={{ position: 'absolute', width: '100%', height: '100%' }}>
+                  <polygon points="12 2 17 3.3 20.7 7 22 12 20.7 17 17 20.7 12 22 7 20.7 3.3 17 2 12 3.3 7 7 3.3" />
+                </svg>
+                <span className="material-symbols-outlined text-green" style={{ fontSize: '14px', fontWeight: 'bold', zIndex: 1 }}>check</span>
               </div>
               <span className="badge-text">EXCELLENCE SINCE 2015</span>
             </div>
