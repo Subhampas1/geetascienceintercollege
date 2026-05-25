@@ -47,8 +47,13 @@ const Contact = () => {
               <div className="info-block">
                 <span className="material-symbols-outlined text-brown">call</span>
                 <div>
-                  <strong className="text-navy">Phone Support</strong>
-                  <p>{contactData.phone1}<br />{contactData.phone2}</p>
+                  <strong className="text-navy">Contact Numbers</strong>
+                  <p style={{ lineHeight: '1.6' }}>
+                    <span style={{ display: 'inline-block', width: '130px' }}><strong>Principal:</strong></span> 9905484481<br />
+                    <span style={{ display: 'inline-block', width: '130px' }}><strong>Secretary:</strong></span> 9835486174<br />
+                    <span style={{ display: 'inline-block', width: '130px' }}><strong>G.W.T. Chairman:</strong></span> 8210363904<br />
+                    <span style={{ display: 'inline-block', width: '130px' }}><strong>Office No.:</strong></span> 06546459726
+                  </p>
                 </div>
               </div>
 
