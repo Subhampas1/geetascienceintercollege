@@ -34,7 +34,21 @@ const Home = () => {
               Where <span className="text-green">Learning</span> Feels Like a <span className="text-yellow">{homeData.heroTitleHighlight || 'Discovery'}</span>.
             </h1>
             <p className="hero-subtitle">
-              {homeData.heroSubtitle}
+              {(() => {
+                const text = homeData.heroSubtitle;
+                const match = text.match(/(We don't just teach[;,] we inspire\.)/i);
+                if (match) {
+                  const parts = text.split(match[0]);
+                  return (
+                    <>
+                      {parts[0]}
+                      <span className="text-orange" style={{ fontWeight: 800 }}>{match[0]}</span>
+                      {parts[1]}
+                    </>
+                  );
+                }
+                return text;
+              })()}
             </p>
             <div className="hero-image-col mobile-hero-image">
               <img src="/hero-image.png" alt="Happy student representing various academic streams" className="hero-main-img" />
