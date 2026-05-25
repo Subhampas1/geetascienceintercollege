@@ -27,7 +27,10 @@ const Home = () => {
         <div className="container hero-content">
           <div className="hero-text-col">
             <div className="hero-badge">
-              <span className="material-symbols-outlined text-green animate-spin-slow" style={{ fontSize: '18px' }}>verified</span>
+              <div style={{ position: 'relative', width: '20px', height: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div className="animate-spin-slow" style={{ position: 'absolute', width: '100%', height: '100%', border: '2px dashed var(--color-green)', borderRadius: '50%' }}></div>
+                <span className="material-symbols-outlined text-green" style={{ fontSize: '14px', fontWeight: 'bold' }}>check</span>
+              </div>
               <span className="badge-text">EXCELLENCE SINCE 2015</span>
             </div>
             <h1 className="hero-title font-sans-display">
