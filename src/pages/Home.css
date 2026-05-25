@@ -202,6 +202,36 @@ section {
   margin: 0 8px;
 }
 
+@media (max-width: 768px) {
+  .notice-container {
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: var(--radius-xl);
+    padding: 16px;
+  }
+  
+  .notice-header {
+    justify-content: center;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    padding: 0 0 12px 0;
+    margin-bottom: 12px;
+  }
+  
+  .notice-scroll-wrapper {
+    width: 100%;
+    padding: 8px 0;
+  }
+  
+  .notice-action {
+    justify-content: center;
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+    padding: 12px 0 0 0;
+    margin-top: 12px;
+  }
+}
+
 /* Celebrating Excellence */
 .section-title {
   font-size: 32px;
