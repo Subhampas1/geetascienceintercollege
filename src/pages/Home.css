@@ -119,6 +119,21 @@ section {
   padding: 0;
 }
 
+@keyframes campaign-ring {
+  0%, 80% { transform: rotate(0); }
+  82% { transform: rotate(15deg); }
+  84% { transform: rotate(-15deg); }
+  86% { transform: rotate(15deg); }
+  88% { transform: rotate(-15deg); }
+  90%, 100% { transform: rotate(0); }
+}
+
+.animate-campaign {
+  display: inline-block;
+  animation: campaign-ring 3s infinite ease-in-out;
+  transform-origin: center;
+}
+
 .notice-header h2 {
   font-size: 20px;
   margin: 0;
