@@ -228,6 +228,7 @@ section {
     border: none;
     padding: 0;
     margin: 0;
+    order: 1;
   }
   
   .notice-header h2 {
@@ -243,6 +244,7 @@ section {
     border: none;
     padding: 0;
     margin: 0;
+    order: 2;
   }
   
   .notice-scroll-wrapper {
@@ -253,6 +255,7 @@ section {
     padding: 16px 0 0 0;
     mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    order: 3;
   }
   
   .notice-scroll-content {
