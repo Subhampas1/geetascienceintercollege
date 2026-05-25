@@ -12,13 +12,15 @@ import Notice from './pages/Notice';
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import { SiteContentProvider } from './context/SiteContentContext';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <HelmetProvider>
       <SiteContentProvider>
         <Router>
-      <Routes>
+          <ScrollToTop />
+          <Routes>
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/*" element={
