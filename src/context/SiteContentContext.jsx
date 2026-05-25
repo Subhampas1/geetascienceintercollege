@@ -7,7 +7,7 @@ const defaultContent = {
   home: {
     heroTitleHighlight: "Journey",
     heroTitleRest: "of Discovery",
-    heroSubtitle: "Empowering minds through playful discovery and academic excellence since 2015. We don't just teach; we inspire.",
+    heroSubtitle: "Empowering minds through playful discovery and academic excellence since 2015. We don't just teach, we inspire.",
     principalName: "Sanjay Kumar",
     principalQuote: "Education is not just about textbooks; it's about shaping character and inspiring a lifelong love for learning. At Geeta Science, we nurture both."
   },
