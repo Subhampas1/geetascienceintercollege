@@ -48,7 +48,7 @@ const Admissions = () => {
               <Button variant="brown" size="large" className="admissions-hero-btn">Start Application</Button>
             </a>
             <Link to="/contact" className="admissions-hero-link">
-              <Button variant="outline" size="large" className="bg-white text-brown admissions-hero-btn" style={{ border: '2px solid var(--color-brown-primary)' }}>Schedule a Visit</Button>
+              <Button variant="outline" size="large" className="bg-white text-brown admissions-hero-btn" style={{ border: '2px solid var(--color-brown-primary)' }}>Call Support</Button>
             </Link>
           </div>
         </div>
