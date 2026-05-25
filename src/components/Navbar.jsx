@@ -28,7 +28,7 @@ const Navbar = () => {
         <Link to="/" className="navbar-logo font-sans-display text-brown" style={{fontSize: '22px', display: 'flex', gap: '8px', alignItems: 'center'}}>
           <img src="/logo.png" alt="Geeta Science Inter College Logo" style={{height: '40px', width: 'auto'}} onError={(e) => e.target.style.display='none'} />
           <span className="nav-logo-text-full">Geeta Science Inter</span>
-          <span className="nav-logo-text-short" style={{display: 'none'}}>Geeta Science</span>
+          <span className="nav-logo-text-short">Geeta Science</span>
           <span key={isCollege ? 'college' : 'mahavidyalaya'} className="logo-swap nav-logo-text-full" style={{
             display: 'inline-block',
             minWidth: '150px',
