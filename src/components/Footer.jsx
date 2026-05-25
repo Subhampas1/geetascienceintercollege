@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-brand">
           <Link to="/" className="footer-logo font-sans-display text-brown" style={{ fontSize: '24px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
             <img src="/logo.png" alt="Geeta Science Inter College Logo" style={{ height: '60px', width: 'auto' }} onError={(e) => e.target.style.display = 'none'} />
-            <span style={{ lineHeight: 1.2, fontWeight: 900, WebkitTextStroke: '0.6px currentColor', letterSpacing: '1px' }}>Geeta Science<br />Inter College</span>
+            <span style={{ lineHeight: 1.2, fontWeight: 900, WebkitTextStroke: '0.6px currentColor', letterSpacing: '-0.75px' }}>Geeta Science<br />Inter College</span>
           </Link>
           <p className="footer-subtitle">
             Empowering minds through playful discovery and academic excellence since 2015.
