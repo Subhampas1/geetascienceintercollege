@@ -80,16 +80,6 @@ const Admissions = () => {
         </div>
       </section>
 
-      {/* Need Assistance Section */}
-      <section className="assistance-section bg-cream text-center">
-        <div className="container">
-          <h2 className="font-sans-display mb-4">Need Assistance?</h2>
-          <p className="mb-6" style={{maxWidth: '600px', margin: '0 auto 32px'}}>Our admission counselors are here to help you navigate through the process and answer any questions you might have.</p>
-          <Link to="/contact" style={{ textDecoration: 'none' }}>
-            <Button variant="outline" size="large" className="text-brown" style={{ borderColor: 'var(--color-brown-primary)' }}>Contact Admissions Office</Button>
-          </Link>
-        </div>
-      </section>
 
       {/* Documentation Section */}
       <section className="docs-section bg-white text-center">
@@ -190,6 +180,17 @@ const Admissions = () => {
               </form>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Need Assistance Section */}
+      <section className="assistance-section bg-cream text-center" style={{ borderTop: '1px solid var(--color-border)' }}>
+        <div className="container">
+          <h2 className="font-sans-display mb-4">Need Assistance?</h2>
+          <p className="mb-6" style={{maxWidth: '600px', margin: '0 auto 32px'}}>Our admission counselors are here to help you navigate through the process and answer any questions you might have.</p>
+          <Link to="/contact" style={{ textDecoration: 'none' }}>
+            <Button variant="outline" size="large" className="text-brown" style={{ borderColor: 'var(--color-brown-primary)' }}>Contact Admissions Office</Button>
+          </Link>
         </div>
       </section>
     </div>
