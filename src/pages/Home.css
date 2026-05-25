@@ -207,56 +207,111 @@ section {
   100% { transform: translateY(-50%); }
 }
 
+.notice-mobile-pagination {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .notice-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    background: white;
     border-radius: var(--radius-xl);
-    padding: 16px 20px;
+    padding: 24px;
+    box-shadow: 0 12px 48px rgba(0,0,0,0.08);
+    border: none;
   }
   
   .notice-header {
-    border-right: none;
+    border: none;
     padding: 0;
     margin: 0;
   }
   
+  .notice-header h2 {
+    font-size: 20px;
+    color: var(--color-navy);
+  }
+  
+  .notice-header .material-symbols-outlined {
+    font-size: 28px;
+  }
+  
   .notice-action {
-    border-left: none;
+    border: none;
     padding: 0;
     margin: 0;
   }
   
   .notice-scroll-wrapper {
     width: 100%;
-    margin-top: 16px;
-    height: 40px;
-    border-top: 1px solid var(--color-border);
-    padding: 16px 0 0 0;
-    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    margin-top: 24px;
+    height: auto;
+    border: none;
+    padding: 0;
+    mask-image: none;
+    -webkit-mask-image: none;
   }
   
   .notice-scroll-content {
     flex-direction: column;
-    align-items: flex-start;
-    animation: scrollNoticeVertical 15s linear infinite;
-    gap: 0;
+    align-items: stretch;
+    animation: none;
+    gap: 16px;
   }
   
   .notice-item {
-    height: 40px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    height: auto;
+    white-space: normal;
+    overflow: visible;
     width: 100%;
-    padding: 0;
+    padding: 16px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  /* Hide duplicates */
+  .notice-scroll-content > div:nth-child(n+6) {
+    display: none;
   }
   
   .notice-divider {
     display: none;
+  }
+  
+  .notice-item p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--color-navy);
+  }
+
+  .notice-mobile-pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .notice-mobile-pagination .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #E2E8F0;
+  }
+
+  .notice-mobile-pagination .dot.active {
+    background-color: var(--color-orange);
+    width: 10px;
+    height: 10px;
   }
 }
 
