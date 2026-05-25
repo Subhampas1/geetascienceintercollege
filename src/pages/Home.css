@@ -92,8 +92,8 @@ section {
 @media (min-width: 992px) {
   .notice-section {
     background-color: transparent !important;
-    margin-top: -35px;
-    margin-bottom: 35px;
+    margin-top: -15px;
+    margin-bottom: 15px;
     padding: 0;
     position: relative;
     z-index: 20;
