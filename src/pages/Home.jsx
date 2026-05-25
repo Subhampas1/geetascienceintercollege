@@ -42,7 +42,7 @@ const Home = () => {
                   return (
                     <>
                       {parts[0]}
-                      <span className="text-orange" style={{ fontWeight: 800 }}>{match[0]}</span>
+                      <span className="text-orange" style={{ fontWeight: 800 }}>We don't just teach, we inspire.</span>
                       {parts[1]}
                     </>
                   );
