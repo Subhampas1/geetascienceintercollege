@@ -299,12 +299,12 @@ section {
     grid-row: 2 / 3;
     width: 100%;
     margin-top: 16px;
-    height: auto;
+    height: 240px;
     border-top: none;
     padding: 8px 0;
-    mask-image: none;
-    -webkit-mask-image: none;
-    overflow: visible;
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    overflow: hidden;
   }
   
   .notice-scroll-wrapper::-webkit-scrollbar {
@@ -314,8 +314,8 @@ section {
   .notice-scroll-content {
     flex-direction: column;
     align-items: stretch;
-    animation: none;
-    gap: 16px;
+    animation: scrollNoticeVertical 15s linear infinite;
+    gap: 0;
     width: 100%;
     padding: 0;
   }
@@ -326,15 +326,15 @@ section {
     overflow: visible;
     width: 100%;
     flex-shrink: 0;
-    padding: 16px;
-    background: #f8f9fa;
-    border: 1px solid rgba(0,0,0,0.05);
-    border-radius: var(--radius-lg);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    padding: 8px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 8px;
   }
   
   .notice-item p {
@@ -343,13 +343,17 @@ section {
     white-space: normal;
   }
   
-  /* Hide duplicates for scrolling */
+  /* Show duplicates for scrolling */
   .notice-scroll-content > div:nth-child(n+6) {
-    display: none;
+    /* Fall back to their default display from desktop */
   }
   
   .notice-divider {
-    display: none;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-border);
+    margin: 8px 0;
   }
   
   .notice-item p {
