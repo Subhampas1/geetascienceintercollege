@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Button from '../components/Button';
 import Chip from '../components/Chip';
 import Card from '../components/Card';
@@ -8,6 +8,24 @@ import InputField from '../components/InputField';
 import './Admissions.css';
 
 const Admissions = () => {
+  const location = useLocation();
+  const [selectedStream, setSelectedStream] = useState('science');
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const streamParam = params.get('stream');
+    if (streamParam && ['science', 'commerce', 'arts'].includes(streamParam)) {
+      setSelectedStream(streamParam);
+      if (location.hash === '#apply-form') {
+        setTimeout(() => {
+          document.getElementById('apply-form')?.scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+      }
+    }
+  }, [location]);
+
+  const handleStreamChange = (e) => setSelectedStream(e.target.value);
+
   return (
     <div className="admissions-page bg-cream">
       <SEO 
@@ -151,15 +169,15 @@ const Admissions = () => {
                   <label className="block font-bold mb-4 text-navy" style={{ fontSize: '14px' }}>Desired Stream</label>
                   <div className="stream-radio-group">
                     <label className="stream-radio">
-                      <input type="radio" name="stream" value="science" defaultChecked />
+                      <input type="radio" name="stream" value="science" checked={selectedStream === 'science'} onChange={handleStreamChange} />
                       <span className="radio-pill">Science (PCM/PCB)</span>
                     </label>
                     <label className="stream-radio">
-                      <input type="radio" name="stream" value="commerce" />
+                      <input type="radio" name="stream" value="commerce" checked={selectedStream === 'commerce'} onChange={handleStreamChange} />
                       <span className="radio-pill">Commerce</span>
                     </label>
                     <label className="stream-radio">
-                      <input type="radio" name="stream" value="arts" />
+                      <input type="radio" name="stream" value="arts" checked={selectedStream === 'arts'} onChange={handleStreamChange} />
                       <span className="radio-pill">Arts & Humanities</span>
                     </label>
                   </div>

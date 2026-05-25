@@ -49,6 +49,9 @@ const Academics = () => {
                   <div className="stream-vertical-pill">PCMB / PCM / PCB</div>
                   <div className="stream-vertical-pill">Bio-Sci & Engineering</div>
                 </div>
+                <Link to="/admissions?stream=science#apply-form" style={{ marginTop: '24px', textDecoration: 'none' }}>
+                  <Button variant="orange" size="medium" style={{ width: '100%', borderRadius: 'var(--radius-full)' }}>Apply Now</Button>
+                </Link>
               </div>
             </Card>
 
@@ -66,6 +69,9 @@ const Academics = () => {
                   <div className="stream-vertical-pill">Accountancy & Business</div>
                   <div className="stream-vertical-pill">Micro & Macro Economics</div>
                 </div>
+                <Link to="/admissions?stream=commerce#apply-form" style={{ marginTop: '24px', textDecoration: 'none' }}>
+                  <Button variant="orange" size="medium" style={{ width: '100%', borderRadius: 'var(--radius-full)' }}>Apply Now</Button>
+                </Link>
               </div>
             </Card>
 
@@ -83,6 +89,9 @@ const Academics = () => {
                   <div className="stream-vertical-pill">Sociology & Psychology</div>
                   <div className="stream-vertical-pill">Literature</div>
                 </div>
+                <Link to="/admissions?stream=arts#apply-form" style={{ marginTop: '24px', textDecoration: 'none' }}>
+                  <Button variant="orange" size="medium" style={{ width: '100%', borderRadius: 'var(--radius-full)' }}>Apply Now</Button>
+                </Link>
               </div>
               </Card>
             </div>
