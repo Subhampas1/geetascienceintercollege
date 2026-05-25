@@ -27,7 +27,7 @@ const Home = () => {
         <div className="container hero-content">
           <div className="hero-text-col">
             <div className="hero-badge">
-              <span className="material-symbols-outlined text-green" style={{ fontSize: '18px' }}>verified</span>
+              <span className="material-symbols-outlined text-green animate-spin-slow" style={{ fontSize: '18px' }}>verified</span>
               <span className="badge-text">EXCELLENCE SINCE 2015</span>
             </div>
             <h1 className="hero-title font-sans-display">
