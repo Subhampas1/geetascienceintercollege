@@ -31,7 +31,7 @@ const Home = () => {
               <span className="badge-text">EXCELLENCE SINCE 2015</span>
             </div>
             <h1 className="hero-title font-sans-display">
-              Where <span className="text-green">Learning</span> Feels Like <span className="text-yellow">{homeData.heroTitleHighlight || 'Discovery'}</span>.
+              Where <span className="text-green">Learning</span> Feels Like a <span className="text-yellow">{homeData.heroTitleHighlight || 'Discovery'}</span>.
             </h1>
             <p className="hero-subtitle">
               {homeData.heroSubtitle}
