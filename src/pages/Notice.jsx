@@ -39,9 +39,7 @@ const Notice = () => {
             backgroundColor: 'white', 
             borderRadius: 'var(--radius-xl)', 
             boxShadow: '0 10px 40px rgba(0,0,0,0.03)',
-            padding: '24px',
-            maxHeight: '600px',
-            overflowY: 'auto'
+            padding: '32px'
           }}>
             <div style={{display: 'flex', flexDirection: 'column'}}>
               {sortedNotices.map((n, i) => {
@@ -55,10 +53,20 @@ const Notice = () => {
                     borderBottom: isLast ? 'none' : '1px solid var(--color-border)'
                   }}>
                     <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px'}}>
-                      <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
-                        <Chip variant={n.variant}>{n.type}</Chip>
-                        <span style={{ fontSize: '13px', fontWeight: 600, color: themeColor, textTransform: 'uppercase', letterSpacing: '1px' }}>
-                          {n.category}
+                      <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
+                        <span style={{
+                          display: 'block',
+                          width: '8px',
+                          height: '8px',
+                          borderRadius: '50%',
+                          backgroundColor: n.variant === 'new' ? 'var(--color-green)' : n.variant === 'update' ? 'var(--color-orange)' : 'var(--color-yellow)',
+                          flexShrink: 0
+                        }}></span>
+                        <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '0.5px' }}>
+                          {n.type}
+                        </span>
+                        <span style={{ fontSize: '13px', fontWeight: 600, color: themeColor, textTransform: 'uppercase', letterSpacing: '1px', marginLeft: '4px' }}>
+                          • {n.category}
                         </span>
                       </div>
                       <span className="text-muted" style={{fontSize: '13px', fontWeight: 500}}>{n.date}</span>
