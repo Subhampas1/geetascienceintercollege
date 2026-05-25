@@ -85,39 +85,43 @@ section {
 
 /* Notice Board */
 .notice-section {
-  padding: 0;
-  overflow: hidden;
+  padding: 40px 0;
+  background-color: var(--color-bg-cream);
+  margin-top: -30px; /* Pull it slightly into the hero section if desired, or just leave it */
 }
 
 .notice-container {
   display: flex;
   align-items: center;
-  height: 80px;
+  background: white;
+  border-radius: var(--radius-full);
+  padding: 12px 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
   position: relative;
-  padding: 0;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .notice-header {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 0 24px;
-  background: white;
-  z-index: 10;
-  height: 100%;
+  padding: 0 24px 0 16px;
+  border-right: 1px solid var(--color-border);
 }
 
 .notice-header h2 {
   font-size: 16px;
   margin: 0;
   color: var(--color-navy);
+  font-weight: 700;
 }
 
 .notice-action {
-  background: white;
-  padding: 0 24px;
-  z-index: 10;
-  height: 100%;
+  padding: 0 16px 0 24px;
+  border-left: 1px solid var(--color-border);
   display: flex;
   align-items: center;
 }
@@ -483,11 +487,11 @@ section {
   .hero-actions button { width: 100%; }
   .hero-image-col { padding: 0 24px; }
   
-  .notice-container { flex-direction: column; height: auto; padding: 24px 0; gap: 32px; }
-  .notice-header { padding: 0 16px; width: 100%; justify-content: center; }
+  .notice-container { flex-direction: column; height: auto; padding: 24px; gap: 24px; border-radius: var(--radius-lg); }
+  .notice-header { padding: 0; width: 100%; justify-content: center; border-right: none; border-bottom: 1px solid var(--color-border); padding-bottom: 16px; }
   .notice-header h2 { display: block; }
   .notice-scroll-wrapper { width: 100%; height: 50px; }
-  .notice-action { padding: 0 16px; width: 100%; justify-content: center; }
+  .notice-action { padding: 16px 0 0 0; width: 100%; justify-content: center; border-left: none; border-top: 1px solid var(--color-border); }
   
   .toppers-grid, .streams-grid, .advantage-grid { gap: 48px; }
   
