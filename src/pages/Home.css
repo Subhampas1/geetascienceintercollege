@@ -415,6 +415,16 @@ section {
 }
 
 /* Celebrating Excellence */
+
+@keyframes icon-float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-float-1 { display: inline-block; animation: icon-float 3s ease-in-out infinite; }
+.animate-float-2 { display: inline-block; animation: icon-float 3.5s ease-in-out infinite 0.5s; }
+.animate-float-3 { display: inline-block; animation: icon-float 4s ease-in-out infinite 1s; }
 .section-title {
   font-size: 32px;
   margin-bottom: 48px;

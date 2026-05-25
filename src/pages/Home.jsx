@@ -130,7 +130,7 @@ const Home = () => {
               <div className="topper-image-wrapper">
                 <div className="topper-bg bg-green-light"></div>
                 <div className="topper-img border-green" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white' }}>
-                  <span className="material-symbols-outlined text-green" style={{ fontSize: '64px' }}>science</span>
+                  <span className="material-symbols-outlined text-green animate-float-1" style={{ fontSize: '64px' }}>science</span>
                 </div>
                 <div className="topper-badge bg-green">#06</div>
               </div>
@@ -141,7 +141,7 @@ const Home = () => {
               <div className="topper-image-wrapper">
                 <div className="topper-bg bg-orange-light"></div>
                 <div className="topper-img border-orange" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white' }}>
-                  <span className="material-symbols-outlined text-orange" style={{ fontSize: '64px' }}>trending_up</span>
+                  <span className="material-symbols-outlined text-orange animate-float-2" style={{ fontSize: '64px' }}>trending_up</span>
                 </div>
                 <div className="topper-badge bg-orange">#11</div>
               </div>
@@ -152,7 +152,7 @@ const Home = () => {
               <div className="topper-image-wrapper">
                 <div className="topper-bg bg-yellow-light"></div>
                 <div className="topper-img border-yellow" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white' }}>
-                  <span className="material-symbols-outlined text-yellow" style={{ fontSize: '64px' }}>palette</span>
+                  <span className="material-symbols-outlined text-yellow animate-float-3" style={{ fontSize: '64px' }}>palette</span>
                 </div>
                 <div className="topper-badge bg-yellow">#13</div>
               </div>
