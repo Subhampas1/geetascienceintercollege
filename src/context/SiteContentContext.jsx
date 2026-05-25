@@ -97,6 +97,15 @@ export const SiteContentProvider = ({ children }) => {
       if (!parsed.contact.chairmanPhone) parsed.contact.chairmanPhone = defaultContent.contact.chairmanPhone;
       if (!parsed.contact.officePhone) parsed.contact.officePhone = defaultContent.contact.officePhone;
       
+      // Force update old boilerplate data to new real data if it was cached
+      if (parsed.contact.address.includes('Katghara')) {
+        parsed.contact.address = defaultContent.contact.address;
+      }
+      if (parsed.contact.phone1 === '+91 98765 43210') {
+        parsed.contact.phone1 = defaultContent.contact.phone1;
+        parsed.contact.phone2 = defaultContent.contact.phone2;
+      }
+      
       return parsed;
     }
     return defaultContent;
