@@ -220,7 +220,7 @@ const Home = () => {
           <p className="section-subtitle" style={{ maxWidth: '800px', margin: '0 auto', fontSize: '18px', lineHeight: '1.8', color: 'var(--color-navy)' }}>
             Established in 2015, Geeta Science Inter College has been a beacon of academic excellence. We believe in providing an environment where learning goes beyond textbooks. Our holistic approach integrates modern educational methodologies with traditional values, ensuring that our students are not just academically proficient but also ethically grounded. We take pride in our state-of-the-art facilities, experienced faculty, and a vibrant community that encourages every student to explore their true potential.
           </p>
-          <blockquote className="text-orange font-sans-display" style={{ fontSize: '28px', margin: '40px auto 16px', fontStyle: 'italic', maxWidth: '800px', fontWeight: 600 }}>
+          <blockquote className="text-orange font-sans-display" style={{ fontSize: 'clamp(20px, 5vw, 32px)', margin: '40px auto 16px', fontStyle: 'italic', maxWidth: '800px', fontWeight: 600 }}>
             "हम अच्छे कर्मों का अनुसरण करें"
           </blockquote>
         </div>
