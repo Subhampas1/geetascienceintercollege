@@ -141,6 +141,33 @@ h3.font-sans-display, h4.font-sans-display, h5.font-sans-display, h6.font-sans-d
   background-color: #e07a2a;
 }
 
+.btn-orange {
+  background-color: var(--color-orange);
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: #d67b30;
+}
+
+.btn-green {
+  background-color: var(--color-green);
+  color: white;
+}
+
+.btn-green:hover {
+  background-color: #249e73;
+}
+
+.btn-purple {
+  background-color: #8e6ee8;
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: #785ad6;
+}
+
 .btn-brown {
   background-color: var(--color-brown-primary);
   color: white;
