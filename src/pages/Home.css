@@ -246,27 +246,6 @@ section {
     padding: 0;
   }
   
-  .notice-item {
-    height: auto;
-    min-height: 60px;
-    white-space: normal;
-    overflow: visible;
-    width: 100%;
-    padding: 12px 0;
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-  }
-  
-  .notice-item p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 0;
-  }
 
   .notice-header {
     grid-column: 1 / 2;
