@@ -43,8 +43,8 @@ const Academics = () => {
               </div>
               <div className="stream-vertical-content">
                 <div className="stream-vertical-badge" style={{ color: 'var(--color-green)', backgroundColor: 'rgba(43, 181, 133, 0.1)' }}>INNOVATORS</div>
-                <h3 className="text-navy" style={{ fontFamily: 'var(--font-serif)', fontSize: '24px', marginBottom: '16px' }}>Science Stream</h3>
-                <p className="text-muted" style={{ fontSize: '15px', lineHeight: '1.6', marginBottom: '24px', flex: 1 }}>{academicsData.scienceDesc}</p>
+                <h3 className="text-navy" style={{ fontFamily: 'var(--font-serif)', fontSize: '20px', marginBottom: '12px' }}>Science Stream</h3>
+                <p className="text-muted" style={{ fontSize: '13px', lineHeight: '1.6', marginBottom: '20px', flex: 1 }}>{academicsData.scienceDesc}</p>
                 <div className="stream-vertical-actions">
                   <div className="stream-vertical-pill">PCMB / PCM / PCB</div>
                   <div className="stream-vertical-pill">Bio-Sci & Engineering</div>
@@ -60,8 +60,8 @@ const Academics = () => {
               </div>
               <div className="stream-vertical-content">
                 <div className="stream-vertical-badge" style={{ color: 'var(--color-orange)', backgroundColor: 'rgba(240, 139, 58, 0.1)' }}>STRATEGISTS</div>
-                <h3 className="text-navy" style={{ fontFamily: 'var(--font-serif)', fontSize: '24px', marginBottom: '16px' }}>Commerce</h3>
-                <p className="text-muted" style={{ fontSize: '15px', lineHeight: '1.6', marginBottom: '24px', flex: 1 }}>{academicsData.commerceDesc}</p>
+                <h3 className="text-navy" style={{ fontFamily: 'var(--font-serif)', fontSize: '20px', marginBottom: '12px' }}>Commerce</h3>
+                <p className="text-muted" style={{ fontSize: '13px', lineHeight: '1.6', marginBottom: '20px', flex: 1 }}>{academicsData.commerceDesc}</p>
                 <div className="stream-vertical-actions">
                   <div className="stream-vertical-pill">Accountancy & Business</div>
                   <div className="stream-vertical-pill">Micro & Macro Economics</div>
@@ -77,8 +77,8 @@ const Academics = () => {
               </div>
               <div className="stream-vertical-content">
                 <div className="stream-vertical-badge" style={{ color: '#8e6ee8', backgroundColor: 'rgba(142, 110, 232, 0.1)' }}>CREATIVES</div>
-                <h3 className="text-navy" style={{ fontFamily: 'var(--font-serif)', fontSize: '24px', marginBottom: '16px' }}>Arts & Humanities</h3>
-                <p className="text-muted" style={{ fontSize: '15px', lineHeight: '1.6', marginBottom: '24px', flex: 1 }}>{academicsData.artsDesc}</p>
+                <h3 className="text-navy" style={{ fontFamily: 'var(--font-serif)', fontSize: '20px', marginBottom: '12px' }}>Arts & Humanities</h3>
+                <p className="text-muted" style={{ fontSize: '13px', lineHeight: '1.6', marginBottom: '20px', flex: 1 }}>{academicsData.artsDesc}</p>
                 <div className="stream-vertical-actions">
                   <div className="stream-vertical-pill">Sociology & Psychology</div>
                   <div className="stream-vertical-pill">Literature</div>
