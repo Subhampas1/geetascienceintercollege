@@ -55,11 +55,13 @@ const Home = () => {
       </header>
 
       {/* Notice Board */}
-      <section className="notice-section bg-white">
+      <section className="notice-section">
         <div className="container notice-container">
           <div className="notice-header">
-            <span className="material-symbols-outlined text-orange">campaign</span>
-            <h2 className="font-sans-display" style={{ whiteSpace: 'nowrap' }}>Notice Board</h2>
+            <h2 className="font-sans-display" style={{ whiteSpace: 'nowrap' }}>
+              Notice Board
+              <span className="notice-accent"></span>
+            </h2>
           </div>
           <div className="notice-scroll-wrapper">
             <div className="notice-scroll-content">
@@ -91,8 +93,8 @@ const Home = () => {
             </div>
           </div>
           <div className="notice-action">
-            <Link to="/notices" className="text-orange" style={{ fontWeight: 600, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '4px', whiteSpace: 'nowrap' }}>
-              See All <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>arrow_forward_ios</span>
+            <Link to="/notices" className="see-all-pill">
+              SEE ALL <span className="material-symbols-outlined" style={{ fontSize: '14px', marginLeft: '2px' }}>arrow_forward</span>
             </Link>
           </div>
           {/* Mobile Pagination Dots */}
