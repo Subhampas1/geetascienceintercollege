@@ -59,7 +59,7 @@ const Home = () => {
         <div className="container notice-container">
           <div className="notice-header" style={{ gap: '12px' }}>
             <span className="material-symbols-outlined text-orange" style={{ fontSize: '28px' }}>campaign</span>
-            <h2 style={{ whiteSpace: 'nowrap', fontFamily: 'var(--font-display)', fontWeight: 800 }}>
+            <h2 className="font-sans-display" style={{ whiteSpace: 'nowrap' }}>
               Notice Board
             </h2>
           </div>
