@@ -5,7 +5,7 @@
 
 /* Hero */
 .admissions-hero {
-  padding: 140px 0 80px;
+  padding: 140px 0 20px;
 }
 
 .admissions-hero-title {
@@ -99,6 +99,10 @@
 }
 
 /* Process Section */
+.process-section {
+  padding-top: 40px;
+}
+
 .process-steps {
   display: flex;
   justify-content: space-between;
