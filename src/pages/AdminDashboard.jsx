@@ -140,9 +140,10 @@ const AdminDashboard = () => {
       );
     }
 
-    if (activeTab === 'notices') {
+    if (activeTab === 'dashboard') {
       return (
         <>
+          <h3 className="font-sans-display mb-6">College Overview</h3>
           <div className="stat-grid">
             <div className="card stat-card">
               <div className="stat-icon"><span className="material-symbols-outlined">campaign</span></div>
@@ -165,8 +166,30 @@ const AdminDashboard = () => {
                 <p>Website Visits</p>
               </div>
             </div>
+            <div className="card stat-card" style={{ borderColor: 'var(--color-brown-primary)' }}>
+              <div className="stat-icon" style={{ backgroundColor: 'rgba(148,83,0,0.1)', color: 'var(--color-brown-primary)' }}><span className="material-symbols-outlined">workspace_premium</span></div>
+              <div className="stat-info">
+                <h3>{content.toppers.length}</h3>
+                <p>Featured Toppers</p>
+              </div>
+            </div>
           </div>
+          
+          <div className="admin-table-container mt-8" style={{ padding: '32px' }}>
+            <h4 className="font-sans-display mb-4">Quick Actions</h4>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+              <Button variant="brown" onClick={() => setActiveTab('notices')}>Manage Notices</Button>
+              <Button variant="outline" onClick={() => setActiveTab('pages')}>Edit Home Page</Button>
+              <Button variant="outline" onClick={() => setActiveTab('gallery')}>Add Topper</Button>
+            </div>
+          </div>
+        </>
+      );
+    }
 
+    if (activeTab === 'notices') {
+      return (
+        <>
           <div className="admin-table-container">
             <div className="admin-table-header">
               <h3 className="font-sans-display" style={{ margin: 0, fontSize: '18px' }}>Manage Notices</h3>
