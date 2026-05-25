@@ -20,7 +20,6 @@ const Navbar = () => {
         <Link to="/" className="navbar-logo font-sans-display text-brown" style={{fontSize: '22px', display: 'flex', gap: '8px', alignItems: 'center'}}>
           <img src="/logo.png" alt="Geeta Science Inter College Logo" style={{height: '40px', width: 'auto'}} onError={(e) => e.target.style.display='none'} />
           <span className="nav-logo-text-full">Geeta Science Inter College</span>
-          <span className="nav-logo-text-short">Geeta Science College</span>
         </Link>
         <div className={`navbar-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>
