@@ -87,7 +87,17 @@ section {
 .notice-section {
   padding: 40px 0;
   background-color: var(--color-bg-cream);
-  margin-top: -30px; /* Pull it slightly into the hero section if desired, or just leave it */
+}
+
+@media (min-width: 992px) {
+  .notice-section {
+    background-color: transparent !important;
+    margin-top: -70px;
+    margin-bottom: 50px;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+  }
 }
 
 .notice-container {
