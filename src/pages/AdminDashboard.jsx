@@ -18,13 +18,6 @@ const AdminDashboard = () => {
   const currentYear = new Date().getFullYear();
   const batches = Array.from({length: 5}, (_, i) => (currentYear - i).toString());
 
-  // Mock Data
-  const [notices, setNotices] = useState([
-    { id: 1, title: 'Class 11 Admissions Open for 2024', type: 'Admissions', date: '2023-10-20' },
-    { id: 2, title: 'Science Exhibition', type: 'Events', date: '2023-11-15' },
-    { id: 3, title: 'Holiday List Updated', type: 'Updates', date: '2023-12-01' }
-  ]);
-
   const handleLogout = () => {
     localStorage.removeItem('isAdminLoggedIn');
     navigate('/admin');
@@ -36,18 +29,18 @@ const AdminDashboard = () => {
   };
 
   const handleAddNew = () => {
-    setEditingItem({ id: Date.now(), title: '', type: 'Updates', date: '' });
+    setEditingItem({ id: Date.now(), title: '', type: 'NEW', date: '' });
     setIsEditing(true);
   };
 
   const handleSave = (e) => {
     e.preventDefault();
     if (editingItem) {
-      const exists = notices.find(n => n.id === editingItem.id);
+      const exists = content.notices.find(n => n.id === editingItem.id);
       if (exists) {
-        setNotices(notices.map(n => n.id === editingItem.id ? editingItem : n));
+        updateContent('notices', content.notices.map(n => n.id === editingItem.id ? editingItem : n));
       } else {
-        setNotices([...notices, editingItem]);
+        updateContent('notices', [editingItem, ...content.notices]);
       }
     }
     setIsEditing(false);
@@ -55,8 +48,8 @@ const AdminDashboard = () => {
   };
 
   const handleDelete = (id) => {
-    if(window.confirm('Are you sure you want to delete this item?')) {
-      setNotices(notices.filter(n => n.id !== id));
+    if(window.confirm('Are you sure you want to delete this notice?')) {
+      updateContent('notices', content.notices.filter(n => n.id !== id));
     }
   };
 
@@ -154,7 +147,7 @@ const AdminDashboard = () => {
             <div className="card stat-card">
               <div className="stat-icon"><span className="material-symbols-outlined">campaign</span></div>
               <div className="stat-info">
-                <h3>{notices.length}</h3>
+                <h3>{content.notices.length}</h3>
                 <p>Active Notices</p>
               </div>
             </div>
@@ -192,7 +185,7 @@ const AdminDashboard = () => {
                 </tr>
               </thead>
               <tbody>
-                {notices.map((notice) => (
+                {content.notices.map((notice) => (
                   <tr key={notice.id}>
                     <td style={{ fontWeight: 500 }}>{notice.title}</td>
                     <td>
@@ -254,6 +247,10 @@ const AdminDashboard = () => {
                 <label>Principal Quote</label>
                 <textarea name="principalQuote" rows="3" defaultValue={content.home.principalQuote}></textarea>
               </div>
+              <div className="admin-form-group">
+                <label>Hindi Quote (About Section)</label>
+                <textarea name="hindiQuote" rows="2" defaultValue={content.home.hindiQuote}></textarea>
+              </div>
               <Button type="submit" variant="brown">Save Home Page</Button>
             </form>
           )}
@@ -287,6 +284,10 @@ const AdminDashboard = () => {
               <div className="admin-form-group" style={{display:'flex', gap:'16px'}}>
                 <div style={{flex:1}}><label>Phone 1</label><input name="phone1" defaultValue={content.contact.phone1} /></div>
                 <div style={{flex:1}}><label>Phone 2</label><input name="phone2" defaultValue={content.contact.phone2} /></div>
+              </div>
+              <div className="admin-form-group" style={{display:'flex', gap:'16px'}}>
+                <div style={{flex:1}}><label>Chairman Phone</label><input name="chairmanPhone" defaultValue={content.contact.chairmanPhone} /></div>
+                <div style={{flex:1}}><label>Office No.</label><input name="officePhone" defaultValue={content.contact.officePhone} /></div>
               </div>
               <div className="admin-form-group" style={{display:'flex', gap:'16px'}}>
                 <div style={{flex:1}}><label>Email 1</label><input name="email1" defaultValue={content.contact.email1} /></div>

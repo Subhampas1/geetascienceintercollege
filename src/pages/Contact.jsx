@@ -40,7 +40,7 @@ const Contact = () => {
                 <span className="material-symbols-outlined text-brown">location_on</span>
                 <div>
                   <strong className="text-navy">Main Campus</strong>
-                  <p>Jabra Rd, Jabra, Hazaribagh, Jharkhand 825301</p>
+                  <p>{contactData.address}</p>
                 </div>
               </div>
 
@@ -49,10 +49,10 @@ const Contact = () => {
                 <div>
                   <strong className="text-navy">Contact Numbers</strong>
                   <p style={{ lineHeight: '1.6' }}>
-                    <span style={{ display: 'inline-block', width: '130px' }}><strong>Principal:</strong></span> 9905484481<br />
-                    <span style={{ display: 'inline-block', width: '130px' }}><strong>Secretary:</strong></span> 9835486174<br />
-                    <span style={{ display: 'inline-block', width: '130px' }}><strong>G.W.T. Chairman:</strong></span> 8210363904<br />
-                    <span style={{ display: 'inline-block', width: '130px' }}><strong>Office No.:</strong></span> 06546459726
+                    <span style={{ display: 'inline-block', width: '130px' }}><strong>Principal:</strong></span> {contactData.phone1}<br />
+                    <span style={{ display: 'inline-block', width: '130px' }}><strong>Secretary:</strong></span> {contactData.phone2}<br />
+                    <span style={{ display: 'inline-block', width: '130px' }}><strong>G.W.T. Chairman:</strong></span> {contactData.chairmanPhone}<br />
+                    <span style={{ display: 'inline-block', width: '130px' }}><strong>Office No.:</strong></span> {contactData.officePhone}
                   </p>
                 </div>
               </div>

@@ -1,17 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Chip from '../components/Chip';
 import SEO from '../components/SEO';
+import { SiteContentContext } from '../context/SiteContentContext';
 
 const Notice = () => {
-  const notices = [
-    { id: 1, date: 'May 20, 2024', category: 'Admission', type: 'NEW', title: 'Class 11th Admission Open for Session 2024-25', desc: 'Admissions are now open for all streams. Please apply online or visit the campus.', variant: 'new' },
-    { id: 2, date: 'May 10, 2024', category: 'General', type: 'UPDATE', title: 'Summer Vacation starts from 15th May 2024', desc: 'The school will remain closed for summer break and reopen on 1st July 2024.', variant: 'update' },
-    { id: 3, date: 'April 25, 2024', category: 'Event', type: 'EVENT', title: 'Annual Science Exhibition on 25th June', desc: 'All students are encouraged to participate. Register your projects with your class teacher.', variant: 'event' },
-    { id: 4, date: 'April 10, 2024', category: 'Admission', type: 'UPDATE', title: 'Scholarship Test Results Announced', desc: 'The results for the entrance scholarship test are now live on the portal.', variant: 'update' },
-    { id: 5, date: 'March 15, 2024', category: 'Event', type: 'NEW', title: 'Guest Lecture by Dr. Verma', desc: 'Join us for an inspiring session on modern physics in the main auditorium.', variant: 'new' },
-    { id: 6, date: 'March 01, 2024', category: 'General', type: 'EVENT', title: 'Parent-Teacher Meeting', desc: 'The quarterly PTM is scheduled for all classes to discuss academic progress.', variant: 'event' },
-    { id: 7, date: 'May 22, 2024', category: 'General', type: 'NEW', title: 'Campus Wi-Fi Upgrade', desc: 'The campus internet has been upgraded to gigabit speeds for all students.', variant: 'new' },
-  ];
+  const { content } = useContext(SiteContentContext);
+  const notices = content.notices;
 
   const sortedNotices = [...notices].sort((a, b) => new Date(b.date) - new Date(a.date));
 
