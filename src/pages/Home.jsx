@@ -57,9 +57,9 @@ const Home = () => {
       {/* Notice Board */}
       <section className="notice-section">
         <div className="container notice-container">
-          <div className="notice-header">
-            <h2 className="font-sans-display" style={{ whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span className="material-symbols-outlined text-orange" style={{ fontSize: '28px' }}>campaign</span>
+          <div className="notice-header" style={{ gap: '12px' }}>
+            <span className="material-symbols-outlined text-orange" style={{ fontSize: '28px' }}>campaign</span>
+            <h2 style={{ whiteSpace: 'nowrap', fontFamily: 'var(--font-display)', fontWeight: 800 }}>
               Notice Board
             </h2>
           </div>
